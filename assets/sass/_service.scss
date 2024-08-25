@@ -1,0 +1,79 @@
+// Service One 
+.service_one {
+    position: relative;
+    padding: 106px 0;
+    background-image: url(/assets/images/bg-img/service-one-bg.jpeg);
+
+    &::before {
+        content: ' ';
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background-image: linear-gradient(to right top, transparent 33%, rgba(255, 255, 255, .5) 33%, rgba(255, 255, 255, .5) 66%, transparent 66%);
+        background-size: 3px 3px;
+        background-repeat: repeat;
+    }
+
+    &>.container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__leftCnt {
+        position: relative;
+        z-index: 2;
+
+        & h2 {
+            font-size: 60px;
+            line-height: 1;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        &>p {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+    }
+
+    &__rightCnt {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__Items {
+        @include displaFlex(flex, space-between, center, row);
+    }
+
+    &__item {
+        max-width: 240px;
+        width: 100%;
+        text-align: center;
+
+        & h3 {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 21px;
+        }
+
+        & p {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+        }
+    }
+
+    & .trackon_btn_1:nth-child(2) {
+        background: $secondary-color;
+        color: $headding-color;
+
+        &:hover {
+            background: $secondary-color !important;
+        }
+    }
+}

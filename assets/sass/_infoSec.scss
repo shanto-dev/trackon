@@ -1,0 +1,32 @@
+.info_sec_one{
+    position: relative;
+    padding: 172px 0;
+    background-image: url(/assets/images/bg-img/info-bg-1.jpeg);
+    &::before {
+        content: ' ';
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;    
+        background-color: rgba(255,255,255,.7);
+    }
+    #{&}__content{
+        position: relative;
+        z-index: 3;
+        & h2{
+            font-size: 60px;
+            font-weight: 300;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+        & p{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            margin-bottom: 32px;
+        }
+    }
+}
