@@ -1,11 +1,12 @@
-.bg_img{
+.bg_img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
 }
 
-.trackon_btn_1{
+.trackon_btn_1,
+.trackon_btn_2 {
     position: relative;
     padding: 0 32px;
     border-radius: 50px;
@@ -17,14 +18,14 @@
     background: $primary-color;
     color: $whit-color;
     @include displaFlex(inline-flex, center, center, column);
-    box-shadow: 0 0 0 rgba(24,24,24,.3);
+    box-shadow: 0 0 0 rgba(24, 24, 24, .3);
     overflow: hidden;
 
     &::after {
         position: absolute;
         content: "";
         bottom: 0;
-        top:0;
+        top: 0;
         left: -60px;
         width: 50px;
         height: 100%;
@@ -37,26 +38,114 @@
         -webkit-transition: 350ms ease all;
         -moz-transition: 350ms ease all;
         transition: 350ms ease all;
-        background: -moz-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
-        background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
-        background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
-        background: -moz-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
-        background: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
         -webkit-transition: 0ms ease all;
         -moz-transition: 0ms ease all;
         transition: 0ms ease all;
         opacity: .5;
     }
 
-    &:hover::after {    
+    &:hover::after {
         left: 110%;
         -webkit-transition: 800ms ease all;
         -moz-transition: 800ms ease all;
         transition: 800ms ease all;
         opacity: .2;
     }
-    &:hover{
+
+    &:hover {
         background: #48a100 !important;
-        box-shadow: 0 3px 10px rgba(24,24,24,.3);
+        box-shadow: 0 3px 10px rgba(24, 24, 24, .3);
+    }
+}
+
+.trackon_btn_2 {
+    background: $secondary-color;
+    color: $headding-color;
+
+    &:hover {
+        background: $primary-color;
+    }
+}
+
+.trackon_btn_3 {
+    position: relative;
+    padding: 0 32px;
+    border-radius: 50px;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    height: 56px;
+    line-height: 56px;
+    font-weight: 700;
+    background: transparent;
+    color: $headding-color;
+    @include displaFlex(inline-flex, center, center, row);
+    overflow: hidden;
+    box-shadow: 0 0 0 2px #181818 inset;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: -60px;
+        width: 50px;
+        height: 100%;
+        z-index: 1;
+        display: block;
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+        -webkit-transition: 350ms ease all;
+        -moz-transition: 350ms ease all;
+        transition: 350ms ease all;
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        -webkit-transition: 0ms ease all;
+        -moz-transition: 0ms ease all;
+        transition: 0ms ease all;
+        opacity: .5;
+    }
+
+    &:hover::before {
+        left: 110%;
+        -webkit-transition: 800ms ease all;
+        -moz-transition: 800ms ease all;
+        transition: 800ms ease all;
+        opacity: .2;
+    }
+
+    &:hover {
+        color: $secondary-color !important;
+        box-shadow: 0 0 0 2em #181818 inset,0 3px 10px rgba(24,24,24,.3);
+    }
+}
+
+// Section Title 
+.section_title {
+    position: relative;
+
+    & h2 {
+        font-size: 60px;
+        line-height: 1;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    & p {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
     }
 }

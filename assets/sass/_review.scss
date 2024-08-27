@@ -1,0 +1,19 @@
+// Review 
+.review_one{
+    padding: 162px 0 175px;
+    background-image: url(/assets/images/bg-img/review-bg.jpeg);
+    &__content{
+        position: relative;
+        text-align: center;
+        & h2{
+            font-size: 60px;
+            font-weight: 300;
+            color: $primary-color;
+            margin-bottom: 30px;
+        }
+        & p{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}

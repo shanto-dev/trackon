@@ -1,0 +1,44 @@
+// Hero One 
+.hero_sec{
+    background-image: url(/assets/images/bg-img/hero.jpeg);
+    min-height: 100vh;
+
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        & h1{
+            font-size: 75px;
+            line-height: 1;
+            font-weight: 300;
+            margin-bottom: 35px;
+            position: relative;
+
+            &::after {
+                content: ' ';
+                display: block;
+                position: absolute;
+                z-index: 5;
+                top: -16px;
+                left:50%;
+                right: 0;
+                pointer-events: none;
+                width: 90px;
+                height: 2px;
+                background-color: $primary-color;
+                transform: translateX(-50%);
+
+            }
+        }
+        & p{
+            font-size: 23px;
+            line-height: 34px;
+            font-weight: 400;
+            max-width: 630px;
+            width: 100%;
+            margin-bottom: 90px;
+        }
+    }
+}

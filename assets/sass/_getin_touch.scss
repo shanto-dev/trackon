@@ -1,0 +1,57 @@
+// Get IN Touch One 
+
+.getin_touch__one{
+    padding: 150px 0;
+    background-color: $primary-color;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: -moz-gradient(135deg,#a6e72a 20%,#53ba00 80%);
+        background: -webkit-linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
+        background: -webkit-linear-gradient(315deg,#a6e72a 20%,#53ba00 80%);
+        background: -moz-linear-gradient(315deg,#a6e72a 20%,#53ba00 80%);
+        background: linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
+        z-index: 1;
+    }
+    & > *{
+        position: relative;
+        z-index: 2;
+    }
+    & .contactItems{
+        @include displaFlex(flex, space-between, start, row);
+        & .contactItem{
+            max-width: 190px;
+            width: 100%;
+            text-align: center;
+            & h4{
+                font-size: 20px;
+                line-height: 1;
+                padding-bottom: 18px;
+                margin-bottom: 19px;
+                position: relative;
+                &:after{
+                    position: absolute;
+                    content: "";
+                    bottom:0;
+                    left:50%;
+                    width:32px;
+                    height:2px;
+                    background: #FFF;
+                    transform: translateX(-50%);
+                }
+            }
+            & p{
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+        & .contactItem:first-child{
+            max-width: 155px;
+        }
+    }
+}
