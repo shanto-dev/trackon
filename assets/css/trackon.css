@@ -226,6 +226,9 @@ a {
   height: auto;
   background: transparent;
   z-index: 99997;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
 }
 .main_header__nav {
   position: relative;
@@ -237,12 +240,21 @@ a {
   flex-direction: row;
   column-gap: 40px;
 }
+.main_header__nav li.logo a {
+  padding: 0;
+}
+.main_header__nav li.logo a img {
+  min-height: 130px;
+}
+.main_header__nav li.logo .sticky-logo {
+  display: none;
+}
 .main_header__nav li a {
   font-size: 13px;
   line-height: 20px;
   font-weight: 500;
   font-family: "Raleway", sans-serif;
-  padding: 0;
+  padding: 22.5px 0;
   color: #181818;
   position: relative;
   display: block;
@@ -252,9 +264,9 @@ a {
 .main_header__nav li a::before {
   position: absolute;
   left: -20px;
-  top: 25%;
+  top: 0;
   right: -20px;
-  bottom: 25%;
+  bottom: 0;
   display: block;
   content: "";
   background: #FFFFFF;
@@ -269,7 +281,7 @@ a {
   display: block;
   position: absolute;
   z-index: 5;
-  bottom: -11px;
+  bottom: 13px;
   left: 0;
   right: 0;
   pointer-events: none;
@@ -290,9 +302,11 @@ a {
   transform: scaleX(1);
   background: #53ba00;
 }
+.main_header__nav li a:hover:before {
+  opacity: 1;
+}
 .main_header__nav li.logo {
-  max-width: 284px;
-  width: 100%;
+  width: 284px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,6 +314,56 @@ a {
 }
 .main_header__nav li.logo a::after, .main_header__nav li.logo a::before {
   display: none;
+}
+.main_header__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 18px;
+}
+.main_header__social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 18px;
+}
+.main_header__social li a {
+  font-size: 13px;
+  color: #181818;
+}
+.main_header__social li a:hover {
+  color: #53ba00;
+}
+.main_header__search {
+  font-size: 13px;
+  color: #181818;
+}
+.main_header__search:hover {
+  color: #53ba00;
+}
+
+.main_header.trk_header_sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99998;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 0 35px 0 rgba(24, 24, 24, 0.15);
+  box-shadow: 2px 0 35px 0 rgba(24, 24, 24, 0.15);
+}
+.main_header.trk_header_sticky li.logo > a {
+  display: none;
+}
+.main_header.trk_header_sticky li.logo a.sticky-logo {
+  display: block;
+  padding: 0;
+}
+.main_header.trk_header_sticky li.logo a.sticky-logo img {
+  height: 78px;
+  min-height: unset;
 }
 
 .footer_one {
@@ -477,6 +541,34 @@ a {
 }
 .service_one .trackon_btn_1:nth-child(2):hover {
   background: #a6e72a !important;
+}
+
+.service_two {
+  padding: 150px 0 188px;
+  background-image: url(/assets/images/bg-img/service-two-bg.jpeg);
+}
+.service_two__item {
+  padding-left: 93px;
+  position: relative;
+}
+.service_two__item > span {
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  left: 0;
+  top: 0;
+  display: inline-block;
+}
+.service_two__item h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.service_two__item p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .client_one {
@@ -707,6 +799,7 @@ a {
   font-weight: 700;
   color: #a6e72a;
   z-index: 3;
+  opacity: 0;
 }
 .product_one .product_item .pd_thumb a i {
   margin-left: 16px;
@@ -714,6 +807,9 @@ a {
 .product_one .product_item .pd_thumb a:hover {
   box-shadow: 0 0 0 1.5em #53ba00 inset, 0 3px 10px rgba(24, 24, 24, 0.3);
   color: #181818 !important;
+}
+.product_one .product_item .pd_thumb:hover a {
+  opacity: 1;
 }
 .product_one .product_item .pd_cnt {
   padding: 16px 20px;
@@ -728,6 +824,109 @@ a {
 .product_one .product_item .pd_cnt p {
   font-size: 14px;
   line-height: 24px;
+}
+
+.product_filter__one {
+  padding: 162px 0 0;
+}
+
+.lookbook_one {
+  padding: 274px 0;
+  background-image: url(/assets/images/bg-img/lkbk-1.jpeg);
+}
+
+#myInput {
+  z-index: 99999;
+}
+
+.modal-dialog.searchModal {
+  max-width: 100vw;
+  height: 100vh;
+  box-shadow: unset;
+  border: unset;
+  border-radius: unset;
+  margin: 0;
+}
+.modal-dialog.searchModal .modal-content {
+  height: 100vh;
+  border: unset;
+  border-radius: unset;
+}
+.modal-dialog.searchModal .modal-header {
+  font-size: 35px;
+  color: #53ba00;
+  border: unset;
+  padding: 40px;
+}
+.modal-dialog.searchModal .modal-header button {
+  --bs-btn-close-color: #53ba00;
+  color: #53ba00;
+  box-shadow: unset;
+  outline: unset;
+  border: unset;
+  background: unset;
+}
+.modal-dialog.searchModal .modal-header button i {
+  font-size: 55px;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+}
+.modal-dialog.searchModal .modal-header button:hover i {
+  transform: rotate(180deg);
+}
+.modal-dialog.searchModal .modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-dialog.searchModal .modal-body form {
+  position: relative;
+  max-width: 1008px;
+  width: 100%;
+}
+.modal-dialog.searchModal .modal-body input[type=text] {
+  padding: 0 2em 0 1em;
+  height: 2.25em;
+  line-height: 2.25em;
+  font-size: 3em;
+  font-weight: 300;
+  border: none;
+  text-align: left;
+  -webkit-transition: 500ms ease all;
+  -moz-transition: 500ms ease all;
+  transition: 500ms ease all;
+  color: #181818;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 0 0 2px rgba(24, 24, 24, 0.1) inset;
+  box-shadow: 0 0 0 2px rgba(24, 24, 24, 0.1) inset;
+  max-width: 1008px;
+  width: 100%;
+}
+.modal-dialog.searchModal .modal-body button {
+  border: 0 !important;
+  position: absolute;
+  margin: 0;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  width: 6.75em;
+  height: 6.75em;
+  background: transparent !important;
+  border: 0;
+  cursor: pointer;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  box-shadow: unset;
+  outline: unset;
+  border: unset;
+  color: rgba(24, 24, 24, 0.1);
+}
+.modal-dialog.searchModal .modal-body button i {
+  font-size: 40px;
+}
+.modal-dialog.searchModal .modal-body button:hover i {
+  color: #53ba00;
 }
 
 /*# sourceMappingURL=trackon.css.map */

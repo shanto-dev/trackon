@@ -7,6 +7,7 @@
     height: auto;
     background: transparent;
     z-index: 99997;
+    @include tranSition(0.3s);
 
     &__nav {
         position: relative;
@@ -15,13 +16,22 @@
             @include displaFlex(inline-flex, start, center, row);
             column-gap: 40px;
         }
+        & li.logo a{
+            padding: 0;
+            & img{
+                min-height: 130px;
+            }
+        }
+        & li.logo .sticky-logo {
+            display: none;
+        }
 
         & li a {
             font-size: 13px;
             line-height: 20px;
             font-weight: 500;
             font-family: $secondary-font;
-            padding: 0;
+            padding: 22.5px 0;
             color: $headding-color;
             position: relative;
             display: block;
@@ -31,9 +41,9 @@
             &::before {
                 position: absolute;
                 left: -20px;
-                top: 25%;
+                top: 0;
                 right: -20px;
-                bottom: 25%;
+                bottom: 0;
                 display: block;
                 content: "";
                 background: $whit-color;
@@ -49,7 +59,7 @@
                 display: block;
                 position: absolute;
                 z-index: 5;
-                bottom: -11px;
+                bottom: 13px;
                 left: 0;
                 right: 0;
                 pointer-events: none;
@@ -72,11 +82,14 @@
                 transform: scaleX(1);
                 background: $primary-color;
             }
+
+            &:hover:before {
+                opacity: 1;
+            }
         }
 
         & li.logo {
-            max-width: 284px;
-            width: 100%;
+            width: 284px;
             @include displaFlex(flex, center, center, column);
 
             & a::after,
@@ -85,4 +98,60 @@
             }
         }
     }
+
+    &__right {
+        @include displaFlex(flex, flex-end, center, row);
+        column-gap: 18px;
+    }
+
+    &__social {
+        @include displaFlex(flex, flex-end, center, row);
+        column-gap: 18px;
+
+        & li a {
+            font-size: 13px;
+            color: $headding-color;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__search {
+        font-size: 13px;
+        color: $headding-color;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+}
+
+.main_header.trk_header_sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99998;
+    background: $whit-color;
+    -webkit-box-shadow: 2px 0 35px 0 rgba(24, 24, 24, .15);
+    box-shadow: 2px 0 35px 0 rgba(24, 24, 24, .15);
+
+    & li.logo>a {
+        display: none;
+    }
+
+    & li.logo a.sticky-logo {
+        display: block;
+        padding: 0;
+
+        & img{
+            height: 78px;
+            min-height: unset;
+        }
+    }
+
+
 }

@@ -64,6 +64,7 @@
                 font-weight: 700;
                 color: $secondary-color;
                 z-index: 3;
+                opacity: 0;
 
                 & i {
                     margin-left: 16px;
@@ -74,6 +75,9 @@
                     color: $headding-color !important;
 
                 }
+            }
+            &:hover a{
+                opacity: 1;
             }
         }
 
@@ -94,4 +98,9 @@
             }
         }
     }
+}
+
+// Product Filter 
+.product_filter__one{
+    padding: 162px 0 0;
 }

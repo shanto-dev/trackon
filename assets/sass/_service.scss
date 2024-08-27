@@ -77,3 +77,35 @@
         }
     }
 }
+
+
+// Service Two 
+.service_two {
+    padding: 150px 0 188px;
+    background-image: url(/assets/images/bg-img/service-two-bg.jpeg);
+
+    &__item {
+        padding-left: 93px;
+        position: relative;
+
+        &>span {
+            position: absolute;
+            width: 73px;
+            height: 73px;
+            left: 0;
+            top: 0;
+            display: inline-block;
+        }
+        & h4{
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        & p{
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+    }
+}
