@@ -2,7 +2,7 @@
 .service_one {
     position: relative;
     padding: 106px 0;
-    background-image: url(/assets/images/bg-img/service-one-bg.jpeg);
+    background-image: url(../images/bg-img/service-one-bg.jpeg);
 
     &::before {
         content: ' ';
@@ -82,7 +82,7 @@
 // Service Two 
 .service_two {
     padding: 150px 0 188px;
-    background-image: url(/assets/images/bg-img/service-two-bg.jpeg);
+    background-image: url(../images/bg-img/service-two-bg.jpeg);
 
     &__item {
         padding-left: 93px;

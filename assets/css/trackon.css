@@ -400,7 +400,7 @@ a {
 # Others
 --------------------------------------------------------------*/
 .hero_sec {
-  background-image: url(/assets/images/bg-img/hero.jpeg);
+  background-image: url(../images/bg-img/hero.jpeg);
   min-height: 100vh;
 }
 .hero_sec__content {
@@ -443,7 +443,7 @@ a {
 .info_sec_one {
   position: relative;
   padding: 172px 0;
-  background-image: url(/assets/images/bg-img/info-bg-1.jpeg);
+  background-image: url(../images/bg-img/info-bg-1.jpeg);
 }
 .info_sec_one::before {
   content: " ";
@@ -476,7 +476,7 @@ a {
 .service_one {
   position: relative;
   padding: 106px 0;
-  background-image: url(/assets/images/bg-img/service-one-bg.jpeg);
+  background-image: url(../images/bg-img/service-one-bg.jpeg);
 }
 .service_one::before {
   content: " ";
@@ -545,7 +545,7 @@ a {
 
 .service_two {
   padding: 150px 0 188px;
-  background-image: url(/assets/images/bg-img/service-two-bg.jpeg);
+  background-image: url(../images/bg-img/service-two-bg.jpeg);
 }
 .service_two__item {
   padding-left: 93px;
@@ -718,7 +718,7 @@ a {
 
 .review_one {
   padding: 162px 0 175px;
-  background-image: url(/assets/images/bg-img/review-bg.jpeg);
+  background-image: url(../images/bg-img/review-bg.jpeg);
 }
 .review_one__content {
   position: relative;
@@ -832,7 +832,7 @@ a {
 
 .lookbook_one {
   padding: 274px 0;
-  background-image: url(/assets/images/bg-img/lkbk-1.jpeg);
+  background-image: url(../images/bg-img/lkbk-1.jpeg);
 }
 
 #myInput {
