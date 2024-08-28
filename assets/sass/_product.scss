@@ -76,7 +76,8 @@
 
                 }
             }
-            &:hover a{
+
+            &:hover a {
                 opacity: 1;
             }
         }
@@ -101,6 +102,181 @@
 }
 
 // Product Filter 
-.product_filter__one{
-    padding: 162px 0 0;
+.product_filter__one {
+    padding: 162px 0 50px;
+    overflow: hidden;
+
+    & .shuffle_wrap {
+        position: relative;
+        overflow: visible !important;
+    }
+
+    & .shuf_item {
+        position: relative;
+        display: block;
+        overflow: visible;
+        text-align: center;
+
+        & .shuf_item_inner {
+            position: relative;
+
+            &>a {
+                display: block;
+                width: 100%;
+                -webkit-transition: all 300ms ease;
+                -moz-transition: all 300ms ease;
+                transition: all 300ms ease;
+                -webkit-box-shadow: 0 0 0 rgba(24, 24, 24, .3);
+                box-shadow: 0 0 0 rgba(24, 24, 24, .3);
+                position: relative;
+                z-index: 3;
+
+                & img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    line-height: 0;
+                    -webkit-transition: transform 300ms ease;
+                    -moz-transition: transform 300ms ease;
+                    transition: transform 300ms ease;
+                    display: block;
+                }
+
+                &:after {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    background: rgba(24, 24, 24, .5);
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    -webkit-transition: all 300ms ease;
+                    -moz-transition: all 300ms ease;
+                    transition: all 300ms ease;
+                    opacity: 0;
+                    pointer-events: none;
+                    opacity: 0;
+                    -webkit-transform-origin: 50% 50%;
+                    -moz-transform-origin: 50% 50%;
+                    -ms-transform-origin: 50% 50%;
+                    transform-origin: 50% 50%;
+                    z-index: 4;
+                }
+            }
+
+            &:hover>a:after {
+                opacity: 1;
+            }
+
+            &:hover>a {
+                -webkit-box-shadow: 0 2px 20px rgba(24, 24, 24, .1);
+                box-shadow: 0 2px 20px rgba(24, 24, 24, .1);
+                border: 10px solid $whit-color;
+                transform: scale(1.07);
+                z-index: 4;
+            }
+
+            & .pd_filterItem_cnt {
+                pointer-events: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                padding: 2.5em;
+                -webkit-transform: translateY(25%);
+                -moz-transform: translateY(25%);
+                -ms-transform: translateY(25%);
+                transform: translateY(25%);
+                -webkit-transition: 500ms ease all;
+                -moz-transition: 500ms ease all;
+                transition: 500ms ease all;
+                -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+                z-index: 4;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                opacity: 0;
+                color: $whit-color;
+
+                & h5 {
+                    font-size: 1.25em;
+                    font-weight: 700;
+                    color: inherit;
+                    overflow: hidden;
+                    -o-text-overflow: ellipsis;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    line-height: 1.2em;
+                    max-height: 2.4em;
+                    width: 100%;
+                    color: $whit-color;
+                    padding-bottom: 10px;
+                    margin-bottom: 11px;
+                    position: relative;
+
+                    &::after {
+                        content: " ";
+                        position: absolute;
+                        display: table;
+                        width: 52px;
+                        height: 2px;
+                        background: $primary-color;
+                        left: 50%;
+                        right: auto;
+                        bottom: 0;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                & p {
+                    font-size: 16px;
+                    overflow: hidden;
+                    -o-text-overflow: ellipsis;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                    line-height: 1.4em;
+                    max-height: 6.5em;
+                    width: 100%;
+                    margin: 0;
+                }
+
+                & a {
+                    font-size: 14px;
+                    line-height: 1;
+                    padding: 10px 15px;
+                    font-weight: 500;
+                    background: $whit-color;
+                    border-radius: 50px;
+                    color: $headding-color;
+                    display: inline-block;
+                    margin-top: 18px;
+                }
+            }
+        }
+        &:hover {
+            z-index: 1;
+        }
+
+
+        &:hover .pd_filterItem_cnt {
+            -webkit-transform: translateY(10px);
+            -moz-transform: translateY(10px);
+            -ms-transform: translateY(10px);
+            transform: translateY(10px);
+            opacity: 1;
+        }
+    }
 }

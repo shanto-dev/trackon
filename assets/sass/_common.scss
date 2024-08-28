@@ -128,7 +128,7 @@
 
     &:hover {
         color: $secondary-color !important;
-        box-shadow: 0 0 0 2em #181818 inset,0 3px 10px rgba(24,24,24,.3);
+        box-shadow: 0 0 0 2em #181818 inset, 0 3px 10px rgba(24, 24, 24, .3);
     }
 }
 
@@ -147,5 +147,48 @@
         font-size: 20px;
         line-height: 30px;
         font-weight: 400;
+    }
+}
+
+// Shuffle Filter 
+.filter_nav {
+    @include displaFlex(flex, center, center, row);
+
+    & li {
+        padding: 10px 20px;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 500;
+        font-family: $secondary-font;
+        text-transform: uppercase;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            left: 1.25rem;
+            right: 1.25rem;
+            bottom: 7px;
+            height: 2px;
+            background: transparent;
+            -webkit-transform: scaleX(0);
+            -moz-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: 200ms ease all;
+            -moz-transition: 200ms ease all;
+            transition: 200ms ease all;
+        }
+
+        &:hover:after,
+        &.active:after {
+            background: $primary-color;    
+            -webkit-transform: scaleX(1);
+            -moz-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            transform: scaleX(1);
+        }
     }
 }
