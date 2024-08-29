@@ -140,13 +140,24 @@
         font-size: 60px;
         line-height: 1;
         font-weight: 300;
-        margin-bottom: 30px;
+        margin-bottom: 30px; 
+        @include lg{
+            font-size: 40px
+        };
+        @include col{
+            font-size: 32px;
+            margin-bottom: 23px;
+        }
     }
 
     & p {
         font-size: 20px;
         line-height: 30px;
         font-weight: 400;
+        @include col{
+            font-size: 16px;
+            line-height: 23px;
+        }
     }
 }
 
@@ -190,5 +201,9 @@
             -ms-transform: scaleX(1);
             transform: scaleX(1);
         }
+    }
+    @include col{
+        flex-wrap: wrap;
+        row-gap: 4px;
     }
 }

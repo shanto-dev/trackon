@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Utility
 --------------------------------------------------------------*/
-@import './_utility.scss';
+@import './utility.scss';
 @import './breakpoient';
 @import './common';
 @import './header';
@@ -15,10 +15,11 @@
 @import './service';
 @import './client';
 @import './subscribe';
-@import './_getin_touch';
+@import './getin_touch';
 @import './review';
 @import './product';
 @import './lookbook';
 @import './googlemap';
+@import './blog';
 
 @import './modal';

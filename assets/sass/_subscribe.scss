@@ -1,20 +1,24 @@
-.subscribe_sec{
+.subscribe_sec {
     padding: 100px 0;
     background-color: $whit-color;
-    & .section_title{
+
+    & .section_title {
         text-align: center;
-        & h2{
+
+        & h2 {
             color: $primary-color;
         }
-        & p{
+
+        & p {
             color: $primary-color;
         }
     }
 
-    & .subscribe_form form{
+    & .subscribe_form form {
         margin-top: 56px;
         @include displaFlex(inline-flex, start, center, row);
         column-gap: 10px;
+
         & input:not([type='checkbox']):not([type='radio']) {
             border-radius: 50px;
             font-size: 16px;
@@ -22,19 +26,30 @@
             padding: 0 20px;
             color: $headding-color;
             font-family: $primary-font;
-            border: 1px solid rgba(24,24,24,.1);
+            border: 1px solid rgba(24, 24, 24, .1);
             width: 340px;
             outline: unset;
             box-shadow: unset;
+
+            @include col {
+                width: 100%;
+            }
         }
-        & input:placeholder{
+
+        & input:placeholder {
             color: $headding-color;
         }
-        button[type="submit"]{
+
+        button[type="submit"] {
             outline: unset;
             border: unset;
             box-shadow: unset;
             padding: 0 45px;
+        }
+
+        @include col {
+            flex-wrap: wrap;
+            row-gap: 18px;
         }
     }
 }

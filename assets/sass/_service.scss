@@ -55,6 +55,24 @@
         width: 100%;
         text-align: center;
 
+        & i{
+            font-size: 74px;    
+            color: #53ba00;
+            background: #53ba00;
+            background-image: -webkit-linear-gradient(135deg,#a6e72a 33%,#53ba00 66%);
+            background-image: -moz-linear-gradient(135deg,#a6e72a 33%,#53ba00 66%);
+            background-image: -ms-linear-gradient(135deg,#a6e72a 33%,#53ba00 66%);
+            background-image: -o-linear-gradient(135deg,#a6e72a 33%,#53ba00 66%);
+            background-image: -webkit-linear-gradient(315deg,#a6e72a 33%,#53ba00 66%);
+            background-image: -moz-linear-gradient(315deg,#a6e72a 33%,#53ba00 66%);
+            background-image: linear-gradient(135deg,#a6e72a 33%,#53ba00 66%);
+            -webkit-background-clip: text !important;
+            border-radius: 0;
+            display: block;
+            -webkit-text-fill-color: transparent !important;
+            margin-bottom: 9px;
+        }
+
         & h3 {
             font-size: 20px;
             line-height: 20px;

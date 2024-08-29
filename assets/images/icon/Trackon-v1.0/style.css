@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Trackon';
+  src:  url('fonts/Trackon.eot?4za6si');
+  src:  url('fonts/Trackon.eot?4za6si#iefix') format('embedded-opentype'),
+    url('fonts/Trackon.ttf?4za6si') format('truetype'),
+    url('fonts/Trackon.woff?4za6si') format('woff'),
+    url('fonts/Trackon.svg?4za6si#Trackon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="trackon-"], [class*=" trackon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Trackon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.trackon-campss:before {
+  content: "\e900";
+}
+.trackon-eye-vision:before {
+  content: "\e901";
+}
+.trackon-layer:before {
+  content: "\e902";
+}
+.trackon-map-location:before {
+  content: "\e903";
+}
+.trackon-paper-plane:before {
+  content: "\e904";
+}
+.trackon-play:before {
+  content: "\e905";
+}
+.trackon-share:before {
+  content: "\e906";
+}
+.trackon-user-circle:before {
+  content: "\e907";
+}
+.trackon-whatsapp:before {
+  content: "\e908";
+}
+.trackon-world:before {
+  content: "\e909";
+}
