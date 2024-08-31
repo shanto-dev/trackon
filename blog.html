@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css" />
     <link rel="stylesheet" href="assets/fonts/trackon-icon.css" />
 
     <!-- template styles -->
@@ -50,97 +51,186 @@
                     </ul>
                     <a href="javascript:void(0)" class="main_header__search" id="myModal"><i class="fas fa-search"></i></a>
                 </div>
+                <div class="mb_main_header__nav d-none">
+                    <a href="index.html">
+                        <img src="assets/images/logo.webp" alt="trackon">
+                    </a>
+                    <a class="menu_btn" href="javascript:void(0)"><i class="fas fa-bars"></i></a>
+                </div>
             </div>
         </div>
     </header>
-    
-   <section class="blog_main_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-md-8 pe-4">
-                <div class="blog_list_content">
-                    <div class="post_item">
-                        <div class="post_thumb">
-                            <img src="assets/images/blog/post-1.png" alt="trackon">
-                        </div>
-                        <h4><a href="#" class="post_cat">Informational</a></h4>
-                        <h2 class="post_title"><a href="#">Trackon Acquires New Domain</a></h2>
-                        <p class="post_desc">Exciting News from Trackon! We are thrilled to announce that Trackon has acquired the domain name trackon.com. As part of this strategic move, we have successfully transitioned our website from trackonsoftware.com to the new and improved address at trackon.com. This change marks a significant milestone in our journey, reflecting our commitment to enhancing your user...</p>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <ul class="post_socal">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
+
+    <section class="blog_main_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-12 lg-pe-4">
+                    <div class="blog_list_content">
+                        <div class="post_item">
+                            <div class="post_thumb">
+                                <img src="assets/images/blog/post-1.png" alt="trackon">
                             </div>
-                            <div class="col-md-6 text-end">
-                                <a href="#" class="trackon_btn_1">CONTINUE READING <i class="fas fa-angle-right"></i></a>
+                            <h4><a href="#" class="post_cat">Informational</a></h4>
+                            <h2 class="post_title"><a href="#">Trackon Acquires New Domain</a></h2>
+                            <p class="post_desc">Exciting News from Trackon! We are thrilled to announce that Trackon has acquired the domain name trackon.com. As part of this strategic move, we have successfully transitioned our website from trackonsoftware.com to the new and improved address at trackon.com. This change marks a significant milestone in our journey, reflecting our commitment to enhancing your user...</p>
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <ul class="post_socal">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <a href="#" class="trackon_btn_1">CONTINUE READING <i class="fas fa-angle-right"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="post_item">
-                        <div class="post_thumb">
-                            <img src="assets/images/blog/post-2.jpeg" alt="trackon">
-                        </div>
-                        <h4><a href="#" class="post_cat">Products</a></h4>
-                        <h2 class="post_title"><a href="#">Trackon Commodity Trading and Risk Management Software</a></h2>
-                        <p class="post_desc">International trade is the essential roadmap that guides the global economy. Now, the role of businesses limited to local markets is shrinking in trade. Expanding into foreign markets requires several operational processes to be carried out in coordination for companies.   It is now possible for even small companies to carry out activities such as...</p>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <ul class="post_socal">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
+                        <div class="post_item">
+                            <div class="post_thumb">
+                                <img src="assets/images/blog/post-2.jpeg" alt="trackon">
                             </div>
-                            <div class="col-md-6 text-end">
-                                <a href="#" class="trackon_btn_1">CONTINUE READING <i class="fas fa-angle-right"></i></a>
+                            <h4><a href="#" class="post_cat">Products</a></h4>
+                            <h2 class="post_title"><a href="#">Trackon Commodity Trading and Risk Management Software</a></h2>
+                            <p class="post_desc">International trade is the essential roadmap that guides the global economy. Now, the role of businesses limited to local markets is shrinking in trade. Expanding into foreign markets requires several operational processes to be carried out in coordination for companies. It is now possible for even small companies to carry out activities such as...</p>
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <ul class="post_socal">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <a href="#" class="trackon_btn_1">CONTINUE READING <i class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_item">
+                            <div class="post_thumb">
+                                <div class="post_thumbCarousel owl-carousel owl-theme">
+                                    <img src="assets/images/blog/post-3.jpeg" alt="trackon">
+                                    <img src="assets/images/blog/post-3.2.jpeg" alt="trackon">
+                                    <img src="assets/images/blog/post-3.3.jpeg" alt="trackon">
+                                </div>
+                            </div>
+                            <h4><a href="#" class="post_cat">Informational</a></h4>
+                            <h2 class="post_title"><a href="#">Commodity Trading and Risk Management Software</a></h2>
+                            <p class="post_desc">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.</p>
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <ul class="post_socal">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <a href="#" class="trackon_btn_1">CONTINUE READING <i class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_item">
+                            <div class="post_thumb">
+                                <div class="post_thumbCarousel owl-carousel owl-theme">
+                                    <img src="assets/images/blog/post-4.jpeg" alt="trackon">
+                                    <img src="assets/images/blog/post-4.2.jpeg" alt="trackon">
+                                    <img src="assets/images/blog/post-4.3.jpeg" alt="trackon">
+                                    <img src="assets/images/blog/post-4.4.jpeg" alt="trackon">
+                                    <img src="assets/images/blog/post-4.5.jpeg" alt="trackon">
+                                </div>
+                            </div>
+                            <h4><a href="#" class="post_cat">Design</a></h4>
+                            <h2 class="post_title"><a href="#">Why would you buy Trackon Software?</a></h2>
+                            <p class="post_desc">Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.</p>
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <ul class="post_socal">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <a href="#" class="trackon_btn_1">CONTINUE READING <i class="fas fa-angle-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <div class="blog_sidebar">
-                    <aside class="widget_search">
-                        <form action="">
-                            <input type="search" name="" id="">
-                            <button type="submit"><i class="fas fa-search"></i></button>
-                        </form>
-                    </aside>
-                    <aside class="widget_resent_post">
-                        <h2 class="widget_title">Archives</h2>
-                        <ul class="post_item">
-                            <li>
-                                <img src="" alt="">
-                                <span></span>
-                                <h4><a href="#"></a></h4>
-                            </li>
-                        </ul>
-                    </aside>
-                    <aside class="widget_archive">
-                        <h2 class="widget_title">Archives</h2>
-                        <ul class="post_archive">
-                            <li>
-                                <a href="#">
-                                    July 2024
-                                    <span>(1)</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </aside>
-                    <aside class="widget_category">
-                        <h2 class="widget_title">Categories</h2>
-                        <div class="post_cagegory">
-                            
-                        </div>
-                    </aside>
+                <div class="col-lg-3 col-md-12">
+                    <div class="blog_sidebar">
+                        <aside class="widget_search">
+                            <form action="">
+                                <input type="search" placeholder="Looking for..." name="search" id="search">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </aside>
+                        <aside class="widget_resent_post">
+                            <h2 class="widget_title">Recent Posts</h2>
+                            <ul class="post_item">
+                                <li>
+                                    <img src="assets/images/blog/rp-1.png" alt="trackon">
+                                    <span>July 31, 2024</span>
+                                    <h4><a href="#">Trackon Acquires New Domain</a></h4>
+                                </li>
+                                <li>
+                                    <img src="assets/images/blog/rp-2.jpeg" alt="trackon">
+                                    <span>November 9, 2021</span>
+                                    <h4><a href="#">Trackon Commodity Trading and Risk...</a></h4>
+                                </li>
+                                <li>
+                                    <img src="assets/images/blog/rp-3.jpeg" alt="trackon">
+                                    <span>October 26, 2017</span>
+                                    <h4><a href="#">Commodity Trading and Risk Management...</a></h4>
+                                </li>
+                                <li>
+                                    <img src="assets/images/blog/rp-4.jpeg" alt="trackon">
+                                    <span>October 22, 2017</span>
+                                    <h4><a href="#">Why would you buy Trackon Software?</a></h4>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="widget_archive">
+                            <h2 class="widget_title">Archives</h2>
+                            <ul class="post_archive">
+                                <li>
+                                    <a href="#">
+                                        July 2024
+                                        <span>(1)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        November 2021
+                                        <span>(1)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        October 2017
+                                        <span>(2)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="widget_category">
+                            <h2 class="widget_title">Categories</h2>
+                            <div class="post_cagegory">
+                                <section class="ps_cat_select">
+                                    <option selected>Select Category</option>
+                                    <option value="design">Design (1)</option>
+                                    <option value="Informational">Informational (2)</option>
+                                    <option value="Policy">Policy (2)</option>
+                                    <option value="Products">Products (1)</option>
+                                </section>
+                            </div>
+                        </aside>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-   </section>
+    </section>
 
     <footer class="footer_one">
         <div class="container">
@@ -181,6 +271,42 @@
         </div>
     </footer>
 
+    <!-- Header mobile Menu  -->
+    <section class="popup_menubar_sec">
+        <div class="popup_menubar_overlay"></div>
+        <div class="pop_menubar_background">
+            <div class="popMenubarArea">
+                <div class="popMenu_top">
+                    <div class="menu_pop_logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.webp" alt="trackon">
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" id="popup_nav_Closer" class="fas fa-times"><span></span></a>
+                </div>
+                <div class="dfNav_popupWrapper">
+                    <nav class="menubar_popup">
+                        <ul class="main_mobile_menu d-flex align-items-center">
+                            <li class="main_mobile_menu__item"><a href="index.html">Home</a></li>
+                            <li class="main_mobile_menu__item"><a href="about.html">About</a></li>
+                            <li class="main_mobile_menu__item"><a href="portfolio.html">Portfolio</a></li>
+                            <li class="main_mobile_menu__item"><a class="active" href="blog.html">Blog</a></li>
+                            <li class="main_mobile_menu__item"><a href="career.html">CAREERS</a></li>
+                            <li class="main_mobile_menu__item"><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </nav>
+                    <div class="poppup_social">
+                        <ul class="main_header__social">
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="javascript:void(0)" class="main_header__search" ><i class="fas fa-search"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Search Modal  -->
     <div class="modal fade" id="myInput" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog searchModal">
@@ -209,6 +335,7 @@
     <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
     <script src="assets/vendors/slick/slick.min.js"></script>
     <script src="assets/vendors/shuffle/shuffle.min.js"></script>
+    <script src="assets/vendors/nice-select/jquery-nice-select.js"></script>
     <!-- template js -->
     <script src="assets/js/trackon.js"></script>
 </body>
