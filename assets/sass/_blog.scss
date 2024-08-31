@@ -7,6 +7,10 @@
             padding-bottom: 96px;
             border-bottom: 1px solid rgba(24, 24, 24, .1);
 
+            @include sm {
+                padding-bottom: 66px;
+            }
+
             & .post_thumb {
                 margin-bottom: 32px;
 
@@ -22,6 +26,11 @@
                         max-height: 587px;
                         object-fit: cover;
                         min-height: 587px;
+
+                        @include sm {
+                            max-height: 420px;
+                            min-height: 420px;
+                        }
                     }
 
                     & .owl-nav {
@@ -50,6 +59,12 @@
                             visibility: hidden;
                             opacity: 0;
 
+                            @include sm {
+                                width: 45px;
+                                height: 45px;
+                                left: 30px;
+                            }
+
                             &:hover {
                                 background: $primary-color;
                             }
@@ -62,6 +77,10 @@
                         & .owl-next {
                             left: auto;
                             right: 60px;
+
+                            @include sm {
+                                right: 30px;
+                            }
                         }
                     }
 
@@ -78,6 +97,10 @@
                                 background: $whit-color;
                                 margin: 0 4px;
                                 border-radius: 0;
+
+                                @include sm {
+                                    width: 25px;
+                                }
                             }
 
                             &.active span,
@@ -100,10 +123,18 @@
 
                         & .owl-prev {
                             left: 30px;
+
+                            @include sm {
+                                left: 12px;
+                            }
                         }
 
                         & .owl-next {
                             right: 30px;
+
+                            @include sm {
+                                right: 12px;
+                            }
                         }
                     }
                 }
@@ -117,6 +148,10 @@
                 text-transform: uppercase;
                 font-family: $primary-font;
                 margin-bottom: 15px;
+
+                @include sm {
+                    font-size: 18px;
+                }
 
                 & a {
                     color: inherit;
@@ -137,6 +172,10 @@
                 padding-bottom: 22px;
                 position: relative;
                 margin-bottom: 23px;
+
+                @include sm {
+                    font-size: 34px;
+                }
 
                 & a {
                     color: inherit;
@@ -276,6 +315,10 @@
 
         & .post_item:not(:last-child) {
             margin-bottom: 112px;
+
+            @include sm {
+                margin-bottom: 72px;
+            }
         }
 
         & .trackon_btn_1 {
@@ -292,12 +335,14 @@
     position: relative;
     padding-left: 12px;
 
-    @include lg{
+    @include lg {
         padding-left: 0;
     }
-    @include md{
+
+    @include md {
         margin-top: 90px;
     }
+
     & aside:not(:last-child) {
         margin-bottom: 52px;
     }
@@ -326,6 +371,7 @@
 
         & form {
             @include displaFlex(flex, space-between, center, row);
+
             & input[type="search"] {
                 height: 40px;
                 line-height: 40px;
