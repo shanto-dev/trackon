@@ -2667,6 +2667,306 @@ a {
   border-radius: 50%;
 }
 
+.privacy_policy_sec {
+  position: relative;
+  padding: 194px 0 130px;
+}
+@media (max-width: 991px) {
+  .privacy_policy_sec {
+    padding: 160px 0 110px;
+  }
+}
+@media (max-width: 767px) {
+  .privacy_policy_sec {
+    padding: 160px 0 90px;
+  }
+}
+.privacy_policy_sec .privacy_policy_content {
+  position: relative;
+}
+.privacy_policy_sec .privacy_policy_content > p {
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.privacy_policy_sec .privacy_policy_content > h2 {
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: 35px;
+  color: #181818;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .privacy_policy_sec .privacy_policy_content > h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .privacy_policy_sec .privacy_policy_content > h2 {
+    font-size: 38px;
+  }
+}
+.privacy_policy_sec .privacy_policy_content > h2::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 2px;
+  left: 0;
+  bottom: -18px;
+  background: #53ba00;
+}
+.privacy_policy_sec .privacy_policy_content .single_meta {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 32px;
+}
+.privacy_policy_sec .privacy_policy_content .single_meta li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.privacy_policy_sec .privacy_policy_content .single_meta li.sing_author {
+  font-size: 20px;
+  color: #53ba00;
+}
+.privacy_policy_sec .privacy_policy_content .single_meta li.sing_author a {
+  color: inherit;
+  font-size: inherit;
+}
+.privacy_policy_sec .privacy_policy_content .single_meta li.sing_author a:hover {
+  color: #181818;
+}
+.privacy_policy_sec .privacy_policy_content .single_meta span {
+  margin: 0 12px;
+  color: #53ba00;
+}
+.privacy_policy_sec .privacy_policy_content .single_meta i {
+  font-size: 20px;
+  color: #a6e72a;
+  margin-right: 7px;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc p {
+  font-size: 14px;
+  line-height: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc p strong {
+  font-weight: 700;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc p a {
+  color: #53ba00;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc p a:hover {
+  color: #181818;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc h3 {
+  font-size: 23px;
+  line-height: 23px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 26px;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc ul li {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc ul li strong {
+  font-weight: 500;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc ul li:last-child {
+  margin-bottom: 0;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc h4 {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 2px;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc .sing_desc_img img {
+  max-width: 100%;
+  margin-bottom: 8px;
+}
+.privacy_policy_sec .privacy_policy_content .privacy_policy_all_desc .sing_desc_img p {
+  font-size: 12px;
+  line-height: 22px;
+}
+.privacy_policy_sec .privacy_policy_content .single_social {
+  position: relative;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 8px;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FFFFFF;
+  background: #3b5998;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: color 200ms ease;
+  -moz-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li a i {
+  color: inherit;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #FFFFFF;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: inherit;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li a:hover:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  z-index: 1;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li a:hover {
+  color: #3b5998;
+  border: 1px solid #3b5998;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li a i {
+  position: relative;
+  z-index: 2;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li:nth-child(2) a {
+  background: #1da1f2;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li:nth-child(2) a:before {
+  background: #FFFFFF;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li:nth-child(2) a:hover:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  z-index: 1;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li:nth-child(2) a:hover {
+  color: #1da1f2;
+  border: 1px solid #1da1f2;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li:nth-child(2) a i {
+  position: relative;
+  z-index: 2;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li:nth-child(3) a {
+  background: #007bb5;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li:nth-child(3) a:before {
+  background: #FFFFFF;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li:nth-child(3) a:hover:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  z-index: 1;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li:nth-child(3) a:hover {
+  color: #007bb5;
+  border: 1px solid #007bb5;
+}
+.privacy_policy_sec .privacy_policy_content .single_social ul li:nth-child(3) a i {
+  position: relative;
+  z-index: 2;
+}
+.privacy_policy_sec .privacy_policy_content .single_navigation {
+  position: relative;
+}
+.privacy_policy_sec .privacy_policy_content .single_navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 767px) {
+  .privacy_policy_sec .privacy_policy_content .single_navigation ul {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+}
+.privacy_policy_sec .privacy_policy_content .single_navigation ul li {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  min-height: 56px;
+}
+@media (max-width: 767px) {
+  .privacy_policy_sec .privacy_policy_content .single_navigation ul li {
+    width: 100%;
+    min-height: unset;
+  }
+}
+.privacy_policy_sec .privacy_policy_content .single_navigation ul li span {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: inline-block;
+  opacity: 0.6;
+}
+.privacy_policy_sec .privacy_policy_content .single_navigation ul li h3 {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: 700;
+  margin: 0;
+  color: #181818;
+}
+.privacy_policy_sec .privacy_policy_content .single_navigation ul li h3 a {
+  color: inherit;
+  font-size: inherit;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+}
+.privacy_policy_sec .privacy_policy_content .single_navigation ul li h3 a:hover {
+  color: #53ba00;
+}
+.privacy_policy_sec .privacy_policy_content .single_navigation ul li:nth-child(2) {
+  position: relative;
+  text-align: right;
+  align-items: end;
+  padding-left: 0;
+}
+
 #myInput {
   z-index: 99999;
 }
