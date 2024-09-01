@@ -40,7 +40,7 @@ $(document).ready(function () {
                 margin: 10,
                 nav: true,
                 dots: true,
-                navText: ["<i class='fas fa-angle-left'></i>","<i class='fas fa-angle-right'></i>"],
+                navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
                 responsiveClass: true,
                 responsive: {
                     0: {
@@ -66,8 +66,23 @@ $(document).ready(function () {
         $('.popup_menubar_sec').removeClass('active');
         $("body").removeClass("menu__open");
     });
-    
 
+    // Scroll to Top 
+    let scroll_top = document.getElementById("scroll_top");
+    if (scroll_top) {
+        window.onscroll = function () {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                scroll_top.style.display = "block";
+                scroll_top.style.transform = "scale(1)";
+            } else {
+                scroll_top.style.display = "none";
+            }
+        };
+        scroll_top.addEventListener('click', function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    }
 
 
 
@@ -105,8 +120,14 @@ window.addEventListener("scroll", function () {
 
     // Lookbook section parallax
     const slkbkParallax = document.getElementById("lookbookOne_prallax");
-    if (revParallax) {
+    
+    if (slkbkParallax) {
         let reviewOffset = slkbkParallax.offsetTop;
-        slkbkParallax.style.backgroundPositionY = (scrollPosition - reviewOffset) * 0.5 + "px";
+    
+        if (window.innerWidth > 767) {
+            slkbkParallax.style.backgroundPositionY = (scrollPosition - reviewOffset) * 0.5 + "px";
+        } else {
+            slkbkParallax.style.backgroundPositionY = (scrollPosition - reviewOffset) * 1.8 + "px";
+        }
     }
 });

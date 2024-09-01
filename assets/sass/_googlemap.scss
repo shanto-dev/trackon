@@ -12,6 +12,22 @@
             height: 100%;
             min-height: 780px;
 
+            @include md {
+                min-height: 560px;
+            }
+
+            @include sm {
+                min-height: 460px;
+            }
+
+        }
+
+        @include md {
+            min-height: 560px;
+        }
+
+        @include md {
+            min-height: 460px;
         }
     }
 }

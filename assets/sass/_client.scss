@@ -8,6 +8,14 @@
         font-weight: 300;
         margin-bottom: 30px;
         text-align: center;
+
+        @include md {
+            font-size: 50px;
+        }
+
+        @include sm {
+            font-size: 36px;
+        }
     }
 
     & p {
@@ -15,30 +23,49 @@
         line-height: 30px;
         font-weight: 400;
         text-align: center;
+
+        @include sm {
+            font-size: 18px;
+        }
     }
 
     &__clientGrid {
         position: relative;
         @include displaFlex(flex, space-between, start, row);
 
+        @include sm {
+            justify-content: center;
+        }
+
         &__item {
             @include displaFlex(inline-flex, center, start, column);
-            & img{
+
+            & img {
                 -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
-                @include lg{
+
+                @include lg {
                     max-width: 90%;
                 }
-                @include md{
+
+                @include md {
                     max-width: 95%;
                 }
+
+                @include sm {
+                    max-width: 85%;
+                }
             }
-            &:hover{
-                & img{
+
+            &:hover {
+                & img {
                     -webkit-filter: grayscale(0%);
                     filter: grayscale(0%);
                     cursor: pointer;
                 }
+            }
+            @include sm {
+                align-items: center;
             }
         }
 
@@ -49,7 +76,8 @@
                 ;
             }
         }
-        @include md{
+
+        @include md {
             flex-wrap: wrap;
             row-gap: 40px;
             align-items: center;

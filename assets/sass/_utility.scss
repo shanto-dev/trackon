@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-$primary-font: "Roboto", sans-serif;
-$secondary-font: "Raleway", sans-serif;
+$primary-font: "Roboto",
+sans-serif;
+$secondary-font: "Raleway",
+sans-serif;
 
 $primary-color: #53ba00;
 $secondary-color: #a6e72a;
@@ -15,55 +17,72 @@ $body-font-size: 16px;
 $body-line-height: 24px;
 $body-font-weight: 400;
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
-body{
+
+body {
     box-sizing: border-box;
     font-family: $primary-font;
     color: $body-color;
     font-weight: $body-font-weight;
     font-size: $body-font-size;
     line-height: $body-line-height;
+    overflow-x: hidden;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     color: $headding-color;
     line-height: 1.1;
     font-family: $secondary-font;
 
 }
-p{
+
+p {
     margin: 0;
 }
-ul{
+
+ul {
     list-style: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-a{
+
+a {
     display: inline-block;
     text-decoration: none;
 }
-.container{
+
+.container {
     max-width: 1224px;
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.mr-20{
+
+.mr-20 {
     margin-right: 20px;
 }
-.mt-86{
+
+.mt-86 {
     margin-top: 86px;
 }
-.mb-86{
+
+.mb-86 {
     margin-bottom: 86px;
 }
-.gx-20{
+
+.gx-20 {
     --bs-gutter-x: 20px;
 }
-.gy-20{
+
+.gy-20 {
     --bs-gutter-y: 20px;
 }
 

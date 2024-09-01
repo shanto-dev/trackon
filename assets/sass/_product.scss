@@ -114,6 +114,10 @@
     padding: 162px 0 50px;
     overflow: hidden;
 
+    @include md {
+        padding: 120px 0 50px;
+    }
+
     & .shuffle_wrap {
         position: relative;
         overflow: visible !important;
@@ -294,6 +298,10 @@
 .pdt_filter_sec_title {
     padding: 292px 0 132px;
 
+    @include md {
+        padding: 200px 0 100px;
+    }
+
     & h2 strong {
         color: $primary-color;
         font-weight: 700;
@@ -303,11 +311,19 @@
 .product_filter__two {
     padding: 0 0 150px;
 
-    & .shuf_item:nth-child(even){
-        & .shuf_item_inner img{
+    @include md{
+        padding: 0 0 120px;
+    }
+    @include sm{
+        padding: 0 0 100px;
+    }
+
+    & .shuf_item:nth-child(even) {
+        & .shuf_item_inner img {
             max-height: 230px;
         }
     }
+
     & .shuf_item_inner {
         position: relative;
 

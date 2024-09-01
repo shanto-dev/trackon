@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/vendors/slick/slick.css">
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css" />
     <link rel="stylesheet" href="assets/fonts/trackon-icon.css" />
 
     <!-- template styles -->
@@ -29,7 +30,7 @@
                     <ul class="main-header__navLeft d-flex align-items-center">
                         <li class="main-header__nav__item"><a href="index.html">Home</a></li>
                         <li class="main-header__nav__item"><a href="about.html">About</a></li>
-                        <li class="main-header__nav__item"><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li class="main-header__nav__item"><a class="active" href="portfolio.html">Portfolio</a></li>
                         <li class="main-header__nav__item logo">
                             <a href="index.html">
                                 <img src="assets/images/logo.webp" alt="trackon">
@@ -49,6 +50,12 @@
                         <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                     </ul>
                     <a href="javascript:void(0)" class="main_header__search" id="myModal"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="mb_main_header__nav d-none">
+                    <a href="index.html">
+                        <img src="assets/images/logo.webp" alt="trackon">
+                    </a>
+                    <a class="menu_btn" href="javascript:void(0)"><i class="fas fa-bars"></i></a>
                 </div>
             </div>
         </div>
@@ -218,14 +225,15 @@
         </div>
     </section>
 
+
     <footer class="footer_one">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <a href="index.html"><img src="assets/images/footer-logo.png" alt="trackon"></a>
                     <p>© 2024 Trackon Software. All rights reserved.</p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
                     <aside class="footer_nav_widgets">
                         <h4>Quick Links</h4>
                         <ul class="footer_nav">
@@ -235,7 +243,7 @@
                         </ul>
                     </aside>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mt-5 mt-lg-0 col-md-6">
                     <aside class="footer_nav_widgets">
                         <h4>Communicate</h4>
                         <ul class="footer_nav">
@@ -244,7 +252,7 @@
                         </ul>
                     </aside>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mt-5 mt-lg-0 col-md-6">
                     <aside class="footer_nav_widgets">
                         <h4>Site Information</h4>
                         <ul class="footer_nav">
@@ -256,6 +264,46 @@
             </div>
         </div>
     </footer>
+
+    <a id="scroll_top" class="scroll-top" style="display: block; transform: scale(1);"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+
+    <!-- Header mobile Menu  -->
+    <section class="popup_menubar_sec">
+        <div class="popup_menubar_overlay"></div>
+        <div class="pop_menubar_background">
+            <div class="popMenubarArea">
+                <div class="popMenu_top">
+                    <div class="menu_pop_logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.webp" alt="trackon">
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" id="popup_nav_Closer" class="fas fa-times"><span></span></a>
+                </div>
+                <div class="dfNav_popupWrapper">
+                    <nav class="menubar_popup">
+                        <ul class="main_mobile_menu d-flex align-items-center">
+                            <li class="main_mobile_menu__item"><a href="index.html">Home</a></li>
+                            <li class="main_mobile_menu__item"><a href="about.html">About</a></li>
+                            <li class="main_mobile_menu__item"><a href="portfolio.html">Portfolio</a></li>
+                            <li class="main_mobile_menu__item"><a class="active" href="blog.html">Blog</a></li>
+                            <li class="main_mobile_menu__item"><a href="career.html">CAREERS</a></li>
+                            <li class="main_mobile_menu__item"><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </nav>
+                    <div class="poppup_social">
+                        <ul class="main_header__social">
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="javascript:void(0)" class="main_header__search"><i class="fas fa-search"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Search Modal  -->
     <div class="modal fade" id="myInput" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -275,6 +323,7 @@
     </div>
 
 
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -285,6 +334,7 @@
     <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
     <script src="assets/vendors/slick/slick.min.js"></script>
     <script src="assets/vendors/shuffle/shuffle.min.js"></script>
+    <script src="assets/vendors/nice-select/jquery-nice-select.js"></script>
     <!-- template js -->
     <script src="assets/js/trackon.js"></script>
 </body>
