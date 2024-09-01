@@ -89,6 +89,127 @@
                 max-width: 100%;
                 width: 100%;
             }
+
+            & .post_thumbCarousel {
+                position: relative;
+
+                & img {
+                    max-width: 100%;
+                    max-height: 587px;
+                    object-fit: cover;
+                    min-height: 587px;
+
+                    @include sm {
+                        max-height: 420px;
+                        min-height: 420px;
+                    }
+                }
+
+                & .owl-nav {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @include displaFlex(flex, center, center, row);
+                    width: 100%;
+                    @include tranSition(0.3s);
+                    margin: 0;
+
+                    & .owl-prev,
+                    & .owl-next {
+                        width: 60px;
+                        height: 60px;
+                        background: transparent;
+                        color: $whit-color;
+                        border-radius: 50%;
+                        @include displaFlex(flex, center, center, column);
+                        font-size: 28px;
+                        font-weight: 600;
+                        position: absolute;
+                        left: 60px;
+                        @include tranSition(0.3s);
+                        visibility: hidden;
+                        opacity: 0;
+
+                        @include sm {
+                            width: 45px;
+                            height: 45px;
+                            left: 30px;
+                        }
+
+                        &:hover {
+                            background: $primary-color;
+                        }
+                    }
+
+                    & .owl-prev {
+                        right: auto;
+                    }
+
+                    & .owl-next {
+                        left: auto;
+                        right: 60px;
+
+                        @include sm {
+                            right: 30px;
+                        }
+                    }
+                }
+
+                & .owl-dots {
+                    position: absolute;
+                    bottom: 35px;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    & .owl-dot {
+                        & span {
+                            width: 38px;
+                            height: 2px;
+                            background: $whit-color;
+                            margin: 0 4px;
+                            border-radius: 0;
+
+                            @include sm {
+                                width: 25px;
+                            }
+                        }
+
+                        &.active span,
+                        &:hover span {
+                            background: $primary-color;
+                            height: 4px;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                & .owl-nav {
+
+                    & .owl-next,
+                    & .owl-prev {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+
+                    & .owl-prev {
+                        left: 30px;
+
+                        @include sm {
+                            left: 12px;
+                        }
+                    }
+
+                    & .owl-next {
+                        right: 30px;
+
+                        @include sm {
+                            right: 12px;
+                        }
+                    }
+                }
+            }
         }
 
         & .single_all_desc {
@@ -101,6 +222,34 @@
 
                 & strong {
                     font-weight: 700;
+                }
+
+                & a {
+                    color: $primary-color;
+
+                    &:hover {
+                        color: $headding-color;
+                    }
+                }
+            }
+
+            & ul {
+                list-style: number;
+                padding-left: 20px;
+                margin-bottom: 26px;
+
+                & li {
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-bottom: 6px;
+
+                    & strong {
+                        font-weight: 500;
+                    }
+                }
+
+                & li:last-child {
+                    margin-bottom: 0;
                 }
             }
 
