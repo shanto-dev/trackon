@@ -52,10 +52,11 @@ $(document).ready(function () {
         });
     }
 
-    // Nice select 
-    if ($('.ps_cat_select').length > 0) {
-        $('.ps_cat_select').niceSelect();
-    }
+    $('.ps_cat_select li').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.sub_dropdown').slideToggle(250);
+    });
 
     // Popup Nav 
     $('.menu_btn').on('click', function (e) {

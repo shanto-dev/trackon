@@ -1,7 +1,8 @@
 .blog_main_sec {
     position: relative;
     padding: 194px 0 130px;
-    @include sm{
+
+    @include sm {
         padding: 180px 0 100px;
     }
 
@@ -527,40 +528,72 @@
     & .widget_category {
         position: relative;
 
-        & .ps_cat_select {
+        & ul.ps_cat_select {
             width: 100%;
             border: 1px solid rgba(24, 24, 24, .1);
+            box-shadow: unset;
+            outline: unset;
             border-radius: 4px;
 
-            & ul {
-                width: 100%;
-                border: 1px solid rgba(24, 24, 24, .1);
-                box-shadow: unset;
-                outline: unset;
+            & li {
+                padding: 6.5px 13px;
+                padding: 6.5px 13px;
+                font-size: 13px;
+                line-height: 24px;
+                background: transparent;
+                cursor: pointer;
+                @include displaFlex(flex, space-between, center, center);
 
-                & li {
-                    padding: 6.5px 13px;
-                    padding: 6.5px 13px;
-                    font-size: 13px;
-                    line-height: 24px;
-                    border-top: 1px solid rgba(24, 24, 24, .1);
-                    background: transparent;
-
-                    &:first-child {
-                        border-top: 0;
-                    }
-
-                    &:hover {
-                        color: $primary-color;
-                        background: transparent;
-                    }
+                & a {
+                    color: inherit;
+                    font-size: inherit;
                 }
             }
-
-            &::after {
-                width: 8px;
-                height: 8px;
+            & li.active i{
+                transform: rotateZ(180deg);
             }
+        }
+
+        & .sub_dropdown {
+            position: absolute;
+            top: 105%;
+            left: 0;
+            width: 100%;
+            border: 1px solid rgba(24, 24, 24, .1);
+            box-shadow: unset;
+            outline: unset;
+            border-radius: 4px;
+            display: none;
+            z-index: 92;
+            background: $whit-color;
+
+            & li {
+                padding: 6.5px 13px;
+                padding: 6.5px 13px;
+                font-size: 13px;
+                line-height: 24px;
+                border-top: 1px solid rgba(24, 24, 24, .1);
+                background: transparent;
+
+                &:first-child {
+                    border-top: 0;
+                }
+
+                &:hover {
+                    color: $primary-color;
+                    background: transparent;
+                }
+
+                & a {
+                    color: inherit;
+                    font-size: inherit;
+                }
+            }
+        }
+
+        &::after {
+            width: 8px;
+            height: 8px;
         }
     }
 }
