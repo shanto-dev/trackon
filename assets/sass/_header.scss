@@ -300,6 +300,9 @@
                     color: $primary-color;
                 }
             }
+            & a.active{
+                color: $primary-color;
+            }
 
             &:not(:first-child) {
                 padding-bottom: 6px;
