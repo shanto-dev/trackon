@@ -63,6 +63,12 @@ $breakpoient2: ("mn_md": 768px,
 }
 
 @mixin xxl {
+    @media(max-width: map-get($breakpoient, xxl)) {
+        @content;
+    }
+}
+
+@mixin mn_xxl {
     @media(min-width: map-get($breakpoient, xxl)) {
         @content;
     }

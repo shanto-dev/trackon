@@ -187,6 +187,40 @@
 
 }
 
+// About & Career page Header 
+.about-page .main_header,
+.career-page .main_header{
+    position: relative;
+    background: $whit-color;
+}
+.about-page .main_header.trk_header_sticky,
+.career-page .main_header.trk_header_sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99998;
+    background: $whit-color;
+    -webkit-box-shadow: 2px 0 35px 0 rgba(24, 24, 24, .15);
+    box-shadow: 2px 0 35px 0 rgba(24, 24, 24, .15);
+
+    & li.logo>a {
+        display: none;
+    }
+
+    & li.logo a.sticky-logo {
+        display: block;
+        padding: 0;
+
+        & img {
+            height: 78px;
+            min-height: unset;
+        }
+    }
+
+
+}
+
 // Popup MEnu 
 .popup_menubar_sec {
     position: relative;
