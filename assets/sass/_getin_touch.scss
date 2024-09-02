@@ -99,3 +99,111 @@
         }
     }
 }
+
+
+// Get in tuch two
+.getin_touch__two {
+    padding: 150px 0;
+    background: url(../images/ab-image/Dark_bg3.jpg)no-repeat scroll center center / cover;
+    position: relative;
+    & > *{
+        position: relative;
+        z-index: 2;
+        color:#fff;
+    }
+    & .section_title {
+        & h2 {
+            color: #fff;
+            & span {
+                color: $primary-color;
+                font-weight: 700;
+            }
+        }
+    }
+    & .contactItems{
+        @include sm {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @include displaFlex(flex, space-between, start, row);
+        & .contactItem{
+            max-width: 190px;
+            width: 100%;
+            text-align: center;
+            & h4{
+                font-size: 20px;
+                line-height: 1;
+                padding-bottom: 18px;
+                margin-bottom: 19px;
+                position: relative;
+                color:#fff;
+                &:after{
+                    position: absolute;
+                    content: "";
+                    bottom:0;
+                    left:50%;
+                    width:32px;
+                    height:2px;
+                    background: $primary-color;
+                    transform: translateX(-50%);
+                }
+            }
+            & p{
+                font-size: 14px;
+                line-height: 21px;
+                color:#fff;
+            }
+        }
+        & .contactItem:first-child{
+            max-width: 155px;
+        }
+    }
+}
+
+// Get in tuch three
+.contact-page {
+    & .contactItems{
+        @include sm {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @include displaFlex(flex, space-between, start, row);
+        & .contactItem{
+            max-width: 190px;
+            width: 100%;
+            text-align: center;
+            & i {
+                color: $whit-color;
+                font-size: 64px;
+            }
+            & h4{
+                font-size: 20px;
+                line-height: 1;
+                padding-bottom: 18px;
+                margin-bottom: 19px;
+                position: relative;
+                color: #000;
+                &:after{
+                    position: absolute;
+                    content: "";
+                    bottom:0;
+                    left:50%;
+                    width:32px;
+                    height:2px;
+                    background: $whit-color;
+                    transform: translateX(-50%);
+                }
+            }
+            & p{
+                font-size: 14px;
+                line-height: 21px;
+                color:#000;
+            }
+        }
+        & .contactItem:first-child{
+            max-width: 155px;
+        }
+    }
+}

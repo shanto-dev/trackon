@@ -85,3 +85,56 @@
     }
 
 }
+
+
+// Client Sec 02
+.client_sec02 {
+    background: linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
+    padding:140px 0 120px;
+    @include sm {
+        padding: 100px 0 60px;
+    }
+    & .owl-stage {
+        display: flex;
+        align-items: center;
+    }
+    & .section_title {
+        margin: 0 0 80px;
+        & h2 {
+            margin-bottom: 0;
+            @include sm {
+                font-size: 40px;
+            }
+        }
+        & h3 {
+            font-size: 60px;
+            font-weight: 600;
+            color: $whit-color;
+            font-weight: 700;
+            position: relative;
+            margin: 0 0 40px;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: -20px auto;
+                width: 90px;
+                height: 2px;
+                background-color: $whit-color;
+            }
+            @include sm {
+                font-size: 40px;
+            }
+        }
+    }
+    & .client-slider02.owl-carousel {
+        & .owl-item {
+            & img {
+                max-width: 100%;
+                width: auto;
+            }
+        }
+    }
+}

@@ -56,6 +56,110 @@
         }
     }
 }
+
+// Hero Two 
+.hero_about{
+    overflow-x: hidden;
+    @include sm {
+        padding: 0 10px;
+    }
+    & .hero_sec__content {
+        background: linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
+        height: 100%; 
+        @include lg {
+            height: auto;
+            padding: 40px 10px 40px;
+        }
+        & h1 {
+            margin:  0 0 20px;
+            &::after {
+                display: none;
+            }
+            @include lg {
+                font-size: 50px;
+                margin: 0;
+            }
+            @include sm {
+                font-size: 40px;
+            }
+        };
+        & h2 {
+            font-size: 75px;
+            line-height: 75px;
+            color: #fff;
+            margin: 0 0 54px;
+            position: relative;
+            @include lg {
+                margin: 0 0 20px;
+            }
+            @include lg {
+                font-size: 50px;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: -24px auto;
+                width: 90px;
+                height: 2px;
+                background-color: #53ba00;
+                @include lg {
+                    margin: -6px auto;
+                }
+            }
+        };
+        & p{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            max-width: 800px;
+            width: 100%;
+            padding: 0 20px;
+            margin-bottom: 60px;
+            @include lg {
+                margin: 0 0 30px;
+            }
+        };
+        & .hero_btn {
+            gap:20px;
+            @include sm {
+                flex-direction: column;
+                gap: 0;
+            }
+            & .trackon_btn_1 {
+                background: #fff;
+                color:#000;
+                padding: 0px 24px;
+                height: 47px;
+                line-height: 47px;
+                @include tranSition(0.3s);
+                &:hover {
+                    box-shadow: 0 3px 10px rgba(24,24,24,.3);
+                    background: #fff !important;
+                    color: #181818;
+                }
+            };
+            & .trackon_btn_2 {
+                padding: 0px 24px;
+                height: 47px;
+                line-height: 47px;
+                @include tranSition(0.3s);
+                &:hover {
+                    background: #A6E72A !important;
+                }
+            }
+        }
+    };
+    & .heroab_image {
+       & img {
+            max-width: 100%;
+            width: 100%;
+        }
+    };
+}
+
 // Hero Three
 .hero_careers {
     overflow-x: hidden;
