@@ -51,6 +51,56 @@ $(document).ready(function () {
             });
         });
     }
+    // Client Slider
+    $('.client-slider02').owlCarousel({
+        items: 6,
+        loop: true,
+        margin: 60,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+    // Funfact Countdown
+    $(".countfact").appear();
+    $(document.body).on("appear", ".countfact", function (e, $affected) {
+        $affected.each(function () {
+            var $this = $(this);
+            if (!$this.hasClass("appeared")) {
+                jQuery({
+                    Counter: 0
+                }).animate({
+                    Counter: $this.attr("data-count")
+                }, {
+                    duration: 4000,
+                    easing: "swing",
+                    step: function () {
+                        var num = Math.ceil(this.Counter).toString();
+                        if (Number(num) > 999) {
+                            while (/(\d+)(\d{3})/.test(num)) {
+                                num = num.replace(/(\d+)(\d{3})/, '<span class="count-span">' + "$1" + "</span>" + "$2");
+                            }
+                        }
+                        $(".counter", $this).html(num);
+                    },
+                });
+                $this.addClass("appeared");
+            }
+        });
+    });
+
+    // Wow Js
+    new WOW({
+        animateClass: 'animate__animated'
+    }).init();
 
     $('.ps_cat_select li').on('click', function (e) {
         e.preventDefault();
@@ -121,10 +171,10 @@ window.addEventListener("scroll", function () {
 
     // Lookbook section parallax
     const slkbkParallax = document.getElementById("lookbookOne_prallax");
-    
+
     if (slkbkParallax) {
         let reviewOffset = slkbkParallax.offsetTop;
-    
+
         if (window.innerWidth > 767) {
             slkbkParallax.style.backgroundPositionY = (scrollPosition - reviewOffset) * 0.5 + "px";
         } else {

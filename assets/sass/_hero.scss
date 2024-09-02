@@ -56,3 +56,65 @@
         }
     }
 }
+// Hero Three
+.hero_careers {
+    overflow-x: hidden;
+    & .herocr_image {
+        & img {
+            max-width: 100%;
+        }
+    }
+    & .hero_sec__content {
+        background: linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+        padding: 60px 40px;
+
+        & h1 {
+            margin: 0;
+            @include lg {
+                font-size: 50px !important;
+                width: 100%;
+            }
+            @include sm {
+                margin: 0 0 10px;
+            }
+            &::after {
+                position: relative;
+                display: none;
+            }
+        }
+        & h2 {
+            color: $whit-color;
+            font-size: 75px;
+            line-height: 75px;
+            position: relative;
+            margin: 0 0 34px;
+            padding: 0 0 24px;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 90px;
+                height: 2px;
+                background: $primary-color;
+            }
+            @include lg {
+                font-size: 60px;
+            }
+            @include sm {
+                line-height: 50px;
+                font-size: 50px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 580px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+    }
+}

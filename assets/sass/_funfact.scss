@@ -1,0 +1,29 @@
+.funfact-wraper {
+    position: relative;
+    max-width: 660px;
+    & .row.gx-4 {
+        --bs-gutter-x: 4rem;
+    }
+    & .funfact-item {
+        text-align: center;
+        i {
+            display: block;
+            font-size: 30px;
+            color: $whit-color;
+            margin: 0 0 30px;
+        }
+        & h4 {
+            font-size: 40px;
+            line-height: 40px;
+            margin: 0 0 20px;
+            display: inline-flex;
+            align-items: center;
+        }
+        & p {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 0;
+            margin: 0 auto;
+        }
+    }
+}
