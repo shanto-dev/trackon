@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Trackon';
-  src:  url('fonts/Trackon.eot?limrsb');
-  src:  url('fonts/Trackon.eot?limrsb#iefix') format('embedded-opentype'),
-    url('fonts/Trackon.ttf?limrsb') format('truetype'),
-    url('fonts/Trackon.woff?limrsb') format('woff'),
-    url('fonts/Trackon.svg?limrsb#Trackon') format('svg');
+  src:  url('fonts/Trackon.eot?84nplh');
+  src:  url('fonts/Trackon.eot?84nplh#iefix') format('embedded-opentype'),
+    url('fonts/Trackon.ttf?84nplh') format('truetype'),
+    url('fonts/Trackon.woff?84nplh') format('woff'),
+    url('fonts/Trackon.svg?84nplh#Trackon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.trackon-calender:before {
+  content: "\e90f";
+}
+.trackon-diamond:before {
+  content: "\e910";
+}
+.trackon-idea:before {
+  content: "\e911";
+}
+.trackon-like:before {
+  content: "\e912";
+}
+.trackon-map:before {
+  content: "\e913";
+}
+.trackon-pencile:before {
+  content: "\e914";
+}
+.trackon-roadmap-planning:before {
+  content: "\e915";
+}
+.trackon-stand:before {
+  content: "\e916";
+}
 .trackon-calculator:before {
   content: "\e90a";
 }
