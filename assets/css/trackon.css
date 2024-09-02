@@ -646,6 +646,9 @@ a {
 .popup_menubar_sec .main_mobile_menu li a:hover {
   color: #53ba00;
 }
+.popup_menubar_sec .main_mobile_menu li a.active {
+  color: #53ba00;
+}
 .popup_menubar_sec .main_mobile_menu li:not(:first-child) {
   padding-bottom: 6px;
 }
