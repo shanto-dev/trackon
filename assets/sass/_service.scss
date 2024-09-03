@@ -197,7 +197,7 @@
 .service_three {
     padding: 140px 0 140px;
     @include sm {
-        padding: 100px 0 100px;
+        padding: 100px 0 60px;
     }
     & .section_title {
         border-bottom: 1px solid rgba(24,24,24,.1);
@@ -227,8 +227,10 @@
             background: linear-gradient(135deg,#a6e72a 0%,#53ba00 100%);
             border-radius: 50%;
             font-size: 40px;
+            color: $whit-color !important;
             & i {
-                color: $whit-color;
+                color: $whit-color !important;
+                background: -webkit-linear-gradient(315deg, #ffffff 100%, #ffffff 100%);
             }
         }
     }

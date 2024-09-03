@@ -5,6 +5,9 @@
     @include lg {
         padding: 120px 0 120px;
     }
+    @include sm {
+        padding: 80px 0 80px;
+    }
     & .row.gx-3 {
         --bs-gutter-x: 2.4rem;
     }

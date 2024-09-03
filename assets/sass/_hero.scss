@@ -183,6 +183,7 @@
             }
             @include sm {
                 margin: 0 0 10px;
+                font-size: 40px;
             }
             &::after {
                 position: relative;
@@ -209,8 +210,8 @@
                 font-size: 60px;
             }
             @include sm {
-                line-height: 50px;
-                font-size: 50px;
+                line-height: 40px;
+                font-size: 40px;
             }
         }
         p {

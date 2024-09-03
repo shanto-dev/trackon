@@ -106,6 +106,9 @@
     padding: 150px 0;
     background: url(../images/ab-image/Dark_bg3.jpg)no-repeat scroll center center / cover;
     position: relative;
+    @include md {
+        padding: 100px 0;
+    }
     & > *{
         position: relative;
         z-index: 2;
@@ -117,6 +120,11 @@
             & span {
                 color: $primary-color;
                 font-weight: 700;
+            }
+        }
+        & p {
+            @include md {
+                margin: 0 0 40px;
             }
         }
     }
@@ -131,6 +139,15 @@
             max-width: 190px;
             width: 100%;
             text-align: center;
+            @include sm {
+                margin: 0 0 40px;
+            }
+            & i {
+                font-size: 60px;
+                color: #FFFFFF;
+                margin-bottom: 16px;
+                display: inline-block;
+            }
             & h4{
                 font-size: 20px;
                 line-height: 1;
@@ -174,9 +191,14 @@
             max-width: 190px;
             width: 100%;
             text-align: center;
+            @include sm {
+                margin: 0 0 40px;
+            }
             & i {
                 color: $whit-color;
                 font-size: 64px;
+                margin: 0 0 14px;
+                display: inline-block;
             }
             & h4{
                 font-size: 20px;

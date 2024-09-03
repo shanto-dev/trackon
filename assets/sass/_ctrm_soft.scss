@@ -1,0 +1,227 @@
+.ctrm-mainWraper {
+    * {
+        font-family: "Arvo", serif;
+    }
+    & .ctrm-content01 {
+        padding: 60px 0 0;
+        max-width: 480px;
+        width: 100;
+        @include sm{
+            padding: 30px 0 0;
+        }
+        & .trackon_btn_1 {
+            background: #FA5924;
+            text-transform: inherit;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 400;
+            padding: 10px 20px;
+            height: 42px;
+            margin-bottom: 80px;
+            @include sm{
+                margin-bottom: 30px;
+            }
+        }
+        & h2 {
+            font-size: 38px;
+            line-height: 46px;
+            margin: 0 0 20px;
+            @include sm{
+                font-size: 30px;
+                line-height: 38px;
+            }
+        }
+        & p {
+            margin: 0 0 20px;
+        }
+        & ul {
+            margin: 0 0 60px;
+            & li {
+                font-size: 14px;
+                line-height: 21px;
+                color: rgb(60, 84, 104);
+                font-weight: 700;
+                & i {
+                    margin-right: 8px;
+                }
+            }
+        }
+        & img {
+            max-width: 100%;
+        }
+        & .ctrm-gBtn {
+            position: relative;
+            top: -26px;
+            @include sm{
+                top: 0;
+                margin: 20px 0 20px;
+                text-align: center;
+            }
+            & a {
+                height: 54px;
+            }
+        }
+    }
+    & .ctrm-client {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 0 40px;
+        gap: 40px;
+        @include sm{
+            max-width: 100%;
+        }
+        & img {
+            display: block;
+            max-width: 320px;
+            display: block;
+        }
+        & .ct-sm {
+            max-width: 144px;
+        }
+    }
+    & .ctrm-content02 {
+        & p {
+            font-size: 18px;
+            line-height: 29px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
+            margin-bottom: 20px;
+        }
+    }
+    & .ctrm-content03 {
+        padding: 60px 0 120px;
+        & img {
+            max-width: 100%;
+        }
+        & ul {
+            margin-top: 20px;
+            & li {
+                color: rgb(60, 84, 104);
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 700;
+                margin: 0 0 16px;
+            }
+        }
+    }
+    & .ctrm-box {
+        background: #00B071;
+        margin: 0 0 40px;
+        & img {
+            max-width: 500px;
+            width: 100%;
+        }
+        & .ctrm-boxCon {
+            padding: 80px 50px 50px;
+            @include sm{
+                padding: 40px 26px 26px;
+            }
+            & h2 {
+                font-size: 30px;
+                line-height: 36px;
+                color: $whit-color;
+                margin: 0 0 20px;
+            }
+            & p {
+                font-size: 16px;
+                line-height: 24px;
+                color: $whit-color;
+                max-width: 400px;
+            }
+        }
+    }
+    & .cb02 {
+        background: #B0009E;
+    }
+    & .cb03 {
+        background: #FF5924;
+    }
+    & .cb04 {
+        background: #3C5468;
+        margin-bottom: 80px;
+    }
+    & .ctrm-video {
+        max-width: 860px;
+        width: 100%;
+        margin: 40px auto 20px;
+        padding: 0 0 80px;
+        border-bottom: 1px solid #FA5924;
+        & .trackon_btn_1 {
+            font-size: 22px;
+            line-height: 22px;
+            text-transform: inherit;
+            background: #FA5924;
+            font-weight: 400;
+            margin-top: 10px;
+            padding: 10px 50px;
+        }
+    }
+    & .ctrm-formCon {
+        margin: 0 0 80px;
+        & h2 {
+            font-size: 36px;
+            line-height: 43px;
+            color: rgb(12, 36, 57);
+            margin: 0 0 20px;
+            @include sm{
+                font-size: 30px;
+                line-height: 36px;
+            }
+        }
+        & h4 {
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(60, 84, 104);
+            margin: 0;
+        }
+        & p {
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(60, 84, 104);
+            margin: 0 0 20px;
+        }
+    }
+    & .ctrm-form {
+        margin: 0 0 80px;
+        & h2 {
+            font-size: 36px;
+            line-height: 43px;
+            color: rgb(12, 36, 57);
+            margin: 0 0 40px;
+        }
+        & form {
+            & label {
+                font-size: 16px;
+                line-height: 24px;
+                color: rgb(60, 84, 104);
+            }
+            & input,
+            & textarea {
+                width: 100%;
+                border: 1px #ccc solid;
+                background: #fff;
+                border-radius: 50px;
+                height: 47px;
+                padding: 10px 20px;
+                outline: 0;
+                margin: 0 0 20px;
+            }
+            & textarea {
+                height: 187px;
+                border-radius: 20px;
+            }
+            & button {
+                width: 100%;
+                display: block;
+                background: #F0F0F0;
+                height: 44px;
+                color: rgb(60, 84, 104);
+                font-size: 16px;
+                outline: 0;
+                border: 0;
+            }
+         
+        }
+    }
+}

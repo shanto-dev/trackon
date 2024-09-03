@@ -189,7 +189,8 @@
 
 // About & Career page Header 
 .about-page .main_header,
-.career-page .main_header{
+.career-page .main_header,
+.contact-pageBody .main_header {
     position: relative;
     background: $whit-color;
 }

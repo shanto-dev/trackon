@@ -39,3 +39,27 @@
         }
     }
 }
+
+// Footer Two
+.footer_two {
+    background: #F3F3F3;
+    padding: 60px 0 40px;
+    & a {
+        display: inline-block;
+        & img {
+            max-width: 288px;
+            width: 100%;
+        }
+    }
+}
+.copyright {
+    background: rgb(243, 243, 243);
+    padding: 26px 0 26px;
+    border-top: 1px solid rgb(222, 222, 222);
+    & p {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgb(60, 84, 104);
+        font-family: "Arvo", serif;
+    }
+}
