@@ -227,6 +227,9 @@
             background: linear-gradient(135deg,#a6e72a 0%,#53ba00 100%);
             border-radius: 50%;
             font-size: 40px;
+            & i {
+                color: $whit-color;
+            }
         }
     }
 }
