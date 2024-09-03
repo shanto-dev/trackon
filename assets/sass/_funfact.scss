@@ -1,0 +1,56 @@
+.funfact-wraper {
+    position: relative;
+    max-width: 660px;
+    & .row.gx-4 {
+        --bs-gutter-x: 4rem;
+    }
+    & .funfact-item {
+        text-align: center;
+        position: relative;
+        @include sm {
+            margin: 0 auto 40px;
+        }
+        i {
+            display: block;
+            font-size: 60px;
+            color: $whit-color;
+            margin: 0 0 30px;
+            transition: all 350ms ease;
+            &:hover {
+                color: $headding-color;
+            }
+        }
+        & img {
+            margin-bottom: 20px;
+            &:hover {
+                opacity: 0;
+            }
+        }
+        & .fabImg02 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        & h4 {
+            font-size: 40px;
+            line-height: 40px;
+            margin: 0 0 20px;
+            display: inline-flex;
+            align-items: center;
+            @include sm {
+                display: block;
+            }
+        }
+        & p {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 0;
+            margin: 0 auto;
+        }
+    }
+}

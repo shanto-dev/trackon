@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Trackon';
+  src:  url('fonts/Trackon.eot?84nplh');
+  src:  url('fonts/Trackon.eot?84nplh#iefix') format('embedded-opentype'),
+    url('fonts/Trackon.ttf?84nplh') format('truetype'),
+    url('fonts/Trackon.woff?84nplh') format('woff'),
+    url('fonts/Trackon.svg?84nplh#Trackon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="trackon-"], [class*=" trackon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Trackon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.trackon-calender:before {
+  content: "\e90f";
+}
+.trackon-diamond:before {
+  content: "\e910";
+}
+.trackon-idea:before {
+  content: "\e911";
+}
+.trackon-like:before {
+  content: "\e912";
+}
+.trackon-map:before {
+  content: "\e913";
+}
+.trackon-pencile:before {
+  content: "\e914";
+}
+.trackon-roadmap-planning:before {
+  content: "\e915";
+}
+.trackon-stand:before {
+  content: "\e916";
+}
+.trackon-calculator:before {
+  content: "\e90a";
+}
+.trackon-cloud:before {
+  content: "\e90b";
+}
+.trackon-database-table:before {
+  content: "\e90c";
+}
+.trackon-ship:before {
+  content: "\e90d";
+}
+.trackon-study:before {
+  content: "\e90e";
+}
+.trackon-map-location:before {
+  content: "\e900";
+}
+.trackon-paper-plane:before {
+  content: "\e901";
+}
+.trackon-share:before {
+  content: "\e902";
+}
+.trackon-whatsapp:before {
+  content: "\e903";
+}
+.trackon-campss:before {
+  content: "\e904";
+}
+.trackon-earth-globe:before {
+  content: "\e905";
+}
+.trackon-eys-vision:before {
+  content: "\e906";
+}
+.trackon-layers:before {
+  content: "\e907";
+}
+.trackon-play:before {
+  content: "\e908";
+}
+.trackon-user:before {
+  content: "\e909";
+}

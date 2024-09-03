@@ -1,0 +1,231 @@
+// Get IN Touch One 
+
+.getin_touch__one {
+    padding: 150px 0;
+    background-color: $primary-color;
+    position: relative;
+
+    @include md {
+        padding: 120px 0;
+    }
+
+    @include sm {
+        padding: 90px 0;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: -moz-gradient(135deg, #a6e72a 20%, #53ba00 80%);
+        background: -webkit-linear-gradient(135deg, #a6e72a 20%, #53ba00 80%);
+        background: -webkit-linear-gradient(315deg, #a6e72a 20%, #53ba00 80%);
+        background: -moz-linear-gradient(315deg, #a6e72a 20%, #53ba00 80%);
+        background: linear-gradient(135deg, #a6e72a 20%, #53ba00 80%);
+        z-index: 1;
+    }
+
+    & .section_title {
+        & h2 strong {
+            color: $whit-color;
+            font-weight: 700;
+        }
+    }
+
+    &>* {
+        position: relative;
+        z-index: 2;
+    }
+
+    & .contactItems {
+        @include displaFlex(flex, space-between, start, row);
+
+        & .contactItem {
+            max-width: 190px;
+            width: 100%;
+            text-align: center;
+
+            @include col {
+                max-width: 220px;
+            }
+
+            & i {
+                font-size: 64px;
+                color: $whit-color;
+                margin-bottom: 12px;
+                display: inline-block;
+            }
+
+            & h4 {
+                font-size: 20px;
+                line-height: 1;
+                padding-bottom: 18px;
+                margin-bottom: 19px;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    left: 50%;
+                    width: 32px;
+                    height: 2px;
+                    background: #FFF;
+                    transform: translateX(-50%);
+                }
+            }
+
+            & p {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+
+        & .contactItem:first-child {
+            max-width: 155px;
+
+            @include col {
+                max-width: 220px;
+            }
+        }
+
+        @include col {
+            flex-wrap: wrap;
+            row-gap: 46px;
+            justify-content: center;
+        }
+    }
+}
+
+
+// Get in tuch two
+.getin_touch__two {
+    padding: 150px 0;
+    background: url(../images/ab-image/Dark_bg3.jpg)no-repeat scroll center center / cover;
+    position: relative;
+    @include md {
+        padding: 100px 0;
+    }
+    & > *{
+        position: relative;
+        z-index: 2;
+        color:#fff;
+    }
+    & .section_title {
+        & h2 {
+            color: #fff;
+            & span {
+                color: $primary-color;
+                font-weight: 700;
+            }
+        }
+        & p {
+            @include md {
+                margin: 0 0 40px;
+            }
+        }
+    }
+    & .contactItems{
+        @include sm {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @include displaFlex(flex, space-between, start, row);
+        & .contactItem{
+            max-width: 190px;
+            width: 100%;
+            text-align: center;
+            @include sm {
+                margin: 0 0 40px;
+            }
+            & i {
+                font-size: 60px;
+                color: #FFFFFF;
+                margin-bottom: 16px;
+                display: inline-block;
+            }
+            & h4{
+                font-size: 20px;
+                line-height: 1;
+                padding-bottom: 18px;
+                margin-bottom: 19px;
+                position: relative;
+                color:#fff;
+                &:after{
+                    position: absolute;
+                    content: "";
+                    bottom:0;
+                    left:50%;
+                    width:32px;
+                    height:2px;
+                    background: $primary-color;
+                    transform: translateX(-50%);
+                }
+            }
+            & p{
+                font-size: 14px;
+                line-height: 21px;
+                color:#fff;
+            }
+        }
+        & .contactItem:first-child{
+            max-width: 155px;
+        }
+    }
+}
+
+// Get in tuch three
+.contact-page {
+    & .contactItems{
+        @include sm {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @include displaFlex(flex, space-between, start, row);
+        & .contactItem{
+            max-width: 190px;
+            width: 100%;
+            text-align: center;
+            @include sm {
+                margin: 0 0 40px;
+            }
+            & i {
+                color: $whit-color;
+                font-size: 64px;
+                margin: 0 0 14px;
+                display: inline-block;
+            }
+            & h4{
+                font-size: 20px;
+                line-height: 1;
+                padding-bottom: 18px;
+                margin-bottom: 19px;
+                position: relative;
+                color: #000;
+                &:after{
+                    position: absolute;
+                    content: "";
+                    bottom:0;
+                    left:50%;
+                    width:32px;
+                    height:2px;
+                    background: $whit-color;
+                    transform: translateX(-50%);
+                }
+            }
+            & p{
+                font-size: 14px;
+                line-height: 21px;
+                color:#000;
+            }
+        }
+        & .contactItem:first-child{
+            max-width: 155px;
+        }
+    }
+}

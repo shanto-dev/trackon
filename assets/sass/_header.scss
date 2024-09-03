@@ -1,0 +1,356 @@
+// Header 
+.main_header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: auto;
+    background: transparent;
+    z-index: 99997;
+    @include tranSition(0.3s);
+
+    &__nav {
+        position: relative;
+
+        @include md {
+            display: none !important
+        }
+
+        & ul {
+            @include displaFlex(inline-flex, start, center, row);
+            column-gap: 40px;
+        }
+
+        & li.logo a {
+            padding: 0;
+
+            & img {
+                min-height: 130px;
+            }
+        }
+
+        & li.logo .sticky-logo {
+            display: none;
+        }
+
+        & li a {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 500;
+            font-family: $secondary-font;
+            padding: 22.5px 0;
+            color: $headding-color;
+            position: relative;
+            display: block;
+            white-space: nowrap;
+            text-transform: uppercase;
+
+            &::before {
+                position: absolute;
+                left: -20px;
+                top: 0;
+                right: -20px;
+                bottom: 0;
+                display: block;
+                content: "";
+                background: $whit-color;
+                z-index: -1;
+                opacity: 0;
+                -webkit-transition: 200ms ease opacity;
+                -moz-transition: 200ms ease opacity;
+                transition: 200ms ease opacity;
+            }
+
+            &::after {
+                content: ' ';
+                display: block;
+                position: absolute;
+                z-index: 5;
+                bottom: 13px;
+                left: 0;
+                right: 0;
+                pointer-events: none;
+                height: 2px;
+                background-color: $primary-color;
+                -webkit-transform: scaleX(0);
+                -moz-transform: scaleX(0);
+                -ms-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: 200ms ease all;
+                -moz-transition: 200ms ease all;
+                transition: 200ms ease all;
+            }
+
+            &:hover:after,
+            &.active:after {
+                -webkit-transform: scaleX(1);
+                -moz-transform: scaleX(1);
+                -ms-transform: scaleX(1);
+                transform: scaleX(1);
+                background: $primary-color;
+            }
+
+            &:hover:before {
+                opacity: 1;
+            }
+        }
+
+        & li.logo {
+            width: 284px;
+            @include displaFlex(flex, center, center, column);
+
+            & a::after,
+            & a::before {
+                display: none;
+            }
+        }
+    }
+
+    &__right {
+        @include displaFlex(flex, flex-end, center, row);
+        column-gap: 18px;
+
+        @include md {
+            display: none !important;
+        }
+    }
+
+    &__social {
+        @include displaFlex(flex, flex-end, center, row);
+        column-gap: 18px;
+
+        & li a {
+            font-size: 13px;
+            color: $headding-color;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__search {
+        font-size: 13px;
+        color: $headding-color;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    & .mb_main_header__nav {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        & .menu_btn {
+            font-size: 25px;
+            color: $headding-color;
+            @include tranSition(0.3s);
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        @include mn_lg{
+            display: none !important;
+        }
+    }
+
+}
+
+.main_header.trk_header_sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99998;
+    background: $whit-color;
+    -webkit-box-shadow: 2px 0 35px 0 rgba(24, 24, 24, .15);
+    box-shadow: 2px 0 35px 0 rgba(24, 24, 24, .15);
+
+    & li.logo>a {
+        display: none;
+    }
+
+    & li.logo a.sticky-logo {
+        display: block;
+        padding: 0;
+
+        & img {
+            height: 78px;
+            min-height: unset;
+        }
+    }
+
+
+}
+
+// About & Career page Header 
+.about-page .main_header,
+.career-page .main_header,
+.contact-pageBody .main_header {
+    position: relative;
+    background: $whit-color;
+}
+.about-page .main_header.trk_header_sticky,
+.career-page .main_header.trk_header_sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99998;
+    background: $whit-color;
+    -webkit-box-shadow: 2px 0 35px 0 rgba(24, 24, 24, .15);
+    box-shadow: 2px 0 35px 0 rgba(24, 24, 24, .15);
+
+    & li.logo>a {
+        display: none;
+    }
+
+    & li.logo a.sticky-logo {
+        display: block;
+        padding: 0;
+
+        & img {
+            height: 78px;
+            min-height: unset;
+        }
+    }
+
+
+}
+
+// Popup MEnu 
+.popup_menubar_sec {
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    & .popup_menubar_overlay {
+        position: fixed;
+        top: 0;
+        right: auto;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(22, 21, 21, .7);
+        z-index: 99998;
+        opacity: 0;
+        visibility: hidden;
+        cursor: url(../images/close.png), auto;
+        -webkit-transition: all .4s ease-in .8s;
+        transition: all .4s ease-in .8s;
+    }
+
+    &.active .popup_menubar_overlay {
+        right: auto;
+        left: 0;
+        visibility: visible;
+        -webkit-transition: all .8s ease-out 0s;
+        transition: all .8s ease-out 0s;
+        right: 0;
+        opacity: 1;
+    }
+
+    & .pop_menubar_background {
+        background: $whit-color;
+        max-width: 360px;
+        right: auto;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        overflow-y: unset;
+        z-index: 99998;
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-overflow-scrolling: touch;
+        -webkit-transition: all .6s cubic-bezier(.9, .03, 0, .96) .5s;
+        transition: all .6s cubic-bezier(.9, .03, 0, .96) .7s;
+        overflow-y: auto;
+
+        & .popMenubarArea {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &.active .pop_menubar_background {
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        right: 0;
+        -webkit-transition: all .5s cubic-bezier(.9, .03, 0, .96) .3s;
+        transition: all .5s cubic-bezier(.9, .03, 0, .96) .5s;
+    }
+
+    & .popMenu_top {
+        padding: 20px 20px;
+        border-bottom: 1px solid rgba(24, 24, 24, .1);
+        @include displaFlex(flex, space-between, center, row);
+        column-gap: 40px;
+
+        & #popup_nav_Closer {
+            font-size: 26px;
+            color: $headding-color;
+            @include tranSition(0.3s);
+
+            &:hover {
+                color: $primary-color;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    & .main_mobile_menu {
+        @include displaFlex(flex, center, center, column);
+        padding: 40px 30px;
+
+        & li {
+            position: relative;
+            margin-bottom: 6px;
+            border-bottom: 1px solid rgba(24, 24, 24, .1);
+            width: 100%;
+
+            & a {
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 500;
+                font-family: "Raleway", sans-serif;
+                padding: 8px 20px;
+                color: $headding-color;
+                position: relative;
+                display: block;
+                white-space: nowrap;
+                text-transform: uppercase;
+                text-align: center;
+                @include tranSition(0.3s);
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            & a.active{
+                color: $primary-color;
+            }
+
+            &:not(:first-child) {
+                padding-bottom: 6px;
+            }
+
+        }
+    }
+
+    & .poppup_social {
+        @include displaFlex(flex, center, center, row);
+        margin: 40px 30px 0;
+        border-top: 1px solid rgba(24, 24, 24, .1);
+        border-bottom: 1px solid rgba(24, 24, 24, .1);
+        padding: 16px 30px;
+    }
+}

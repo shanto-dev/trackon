@@ -1,0 +1,191 @@
+// Contact Page
+.contact-page {
+    background: linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
+    padding: 140px 0 180px;
+    @include lg {
+        padding: 120px 0 120px;
+    }
+    @include sm {
+        padding: 80px 0 80px;
+    }
+    & .row.gx-3 {
+        --bs-gutter-x: 2.4rem;
+    }
+    & .get-form {
+        & h2 {
+            font-size: 60px;
+            line-height: 60px;
+            font-weight: 300;
+            margin: 0 0 30px;
+            & b {
+                font-weight: 700;
+                color: $whit-color;
+            }
+        }
+        & p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        & form {
+            & input,
+            & textarea {
+                width: 100%;
+                border: 1px solid rgba(24,24,24,.1);
+                outline: 0;
+                border-radius: 50px;
+                padding: 0 20px;
+                height: 52px;
+                transition: all 350ms ease;
+                background: $whit-color;
+                margin: 0 0 14px;
+                resize: none;
+                &:focus {
+                    box-shadow: 0 0 0 2px rgba(24,24,24,.1) inset;
+                }
+            }
+            & textarea {
+                height: 267px;
+                border-radius: 20px;
+                padding:14px 20px;
+            }
+            & button {
+                width: auto;
+                height: 52px;
+                border-radius: 50px;
+                padding: 0 44px;
+                font-size: 15px;
+                line-height: 15px;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $whit-color;
+                background: #181818 ;
+                border: 0;
+                outline: 0;
+                transition: all 350ms ease;
+                &:hover {
+                    background: #323232;
+                    box-shadow: 0 3px 10px rgba(24,24,24,.3);
+                }
+            }
+        }
+    };
+    & .google-map {
+        margin: 80px 0 40px;
+        & iframe {
+            width: 100%;
+            height: 550px;
+            filter: grayscale(100%);
+        }
+    }
+}
+
+
+// Contact Form
+.contact-area {
+    position: relative;
+    padding: 120px 0 120px;
+    @include lg {
+        padding: 0px 0 80px;
+    }
+    & .section_title {
+        margin: 0 0 80px;
+        @include md {
+            margin: 0 0 40px;
+        }
+        h2 {
+            margin: 0;
+            & b {
+                font-weight: 700;
+                color: $primary-color;
+            }
+            @include md {
+                font-size: 40px;
+            }
+        }
+    };
+    & .contact-form{
+        position: relative;
+        background: #F1F1F1;
+        padding: 45px 45px 70px;
+        @include sm {
+            padding: 25px 20px 50px;
+        }
+        & form {
+            & input,
+            & textarea {
+                width: 100%;
+                border: 1px solid rgba(24,24,24,.1);
+                outline: 0;
+                border-radius: 50px;
+                padding: 0 20px;
+                height: 52px;
+                transition: all 350ms ease;
+                background: $whit-color;
+                margin: 0 0 14px;
+                resize: none;
+                &:focus {
+                    box-shadow: 0 0 0 2px rgba(24,24,24,.1) inset;
+                }
+            }
+            & input[type="file"] {
+                padding: 0 10px;
+            }
+            & input[type="file"]::file-selector-button {
+                background-color: $primary-color;
+                color: $whit-color;
+                padding: 8px 14px;
+                border: none;
+                border-radius: 52px;
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 14px;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin-top: 10px;
+            }
+            & button {
+                width: auto;
+                height: 52px;
+                border-radius: 50px;
+                padding: 0 44px;
+                font-size: 15px;
+                line-height: 15px;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $whit-color;
+                background: $primary-color;
+                border: 0;
+                outline: 0;
+            }
+        }
+    };
+    & .contact-info {
+        padding-top: 40px;
+        @include md {
+            padding-top: 80px;
+        }
+        & .info-col {
+            text-align: center;
+            margin: 0 0 40px;
+            @include md {
+                max-width: 300px;
+                width:100%;
+                margin: 0 auto 40px;
+            }
+            & span {
+                color: $primary-color;
+                font-size: 50px;
+                display: inline-block;
+                margin: 0 0 24px;
+            }
+            & h4 {
+                font-size: 20px;
+                line-height: 20px;
+            }
+            & p {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+}

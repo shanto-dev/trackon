@@ -1,0 +1,237 @@
+// Service One 
+.service_one {
+    position: relative;
+    padding: 106px 0;
+    background-image: url(../images/bg-img/service-one-bg.jpeg);
+
+    &::before {
+        content: ' ';
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background-image: linear-gradient(to right top, transparent 33%, rgba(255, 255, 255, .5) 33%, rgba(255, 255, 255, .5) 66%, transparent 66%);
+        background-size: 3px 3px;
+        background-repeat: repeat;
+    }
+
+    &>.container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__leftCnt {
+        position: relative;
+        z-index: 2;
+
+        & h2 {
+            font-size: 60px;
+            line-height: 1;
+            font-weight: 300;
+            margin-bottom: 30px;
+            @include md{
+                font-size: 50px;
+            }
+            @include sm{
+                font-size: 34px;
+            }
+        }
+
+        &>p {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            @include md{
+                margin-bottom: 60px;
+            }
+            @include sm{
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__rightCnt {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__Items {
+        @include displaFlex(flex, space-between, center, row);
+        @include sm{
+            column-gap: 30px;
+        }
+        @include col{
+            flex-wrap: wrap;
+            row-gap: 48px;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        max-width: 240px;
+        width: 100%;
+        text-align: center;
+        @include col{
+            max-width: 275px;
+        }
+
+        & i {
+            font-size: 64px;
+            color: #53ba00;
+            background: #53ba00;
+            background-image: -webkit-linear-gradient(135deg, #a6e72a 33%, #53ba00 66%);
+            background-image: -moz-linear-gradient(135deg, #a6e72a 33%, #53ba00 66%);
+            background-image: -ms-linear-gradient(135deg, #a6e72a 33%, #53ba00 66%);
+            background-image: -o-linear-gradient(135deg, #a6e72a 33%, #53ba00 66%);
+            background-image: -webkit-linear-gradient(315deg, #a6e72a 33%, #53ba00 66%);
+            background-image: -moz-linear-gradient(315deg, #a6e72a 33%, #53ba00 66%);
+            background-image: linear-gradient(135deg, #a6e72a 33%, #53ba00 66%);
+            -webkit-background-clip: text !important;
+            border-radius: 0;
+            display: block;
+            -webkit-text-fill-color: transparent !important;
+            margin-bottom: 18px;
+        }
+
+        & h3 {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 21px;
+        }
+
+        & p {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+        }
+
+    }
+
+    &__item.service_share {
+        min-height: 228px;
+        @include col{
+            min-height: unset;
+        }
+    }
+
+    & .trackon_btn_1:nth-child(2) {
+        background: $secondary-color;
+        color: $headding-color;
+
+        &:hover {
+            background: $secondary-color !important;
+        }
+    }
+}
+
+
+// Service Two 
+.service_two {
+    padding: 150px 0 188px;
+    background-image: url(../images/bg-img/service-two-bg.jpeg);
+    @include md{
+        padding: 120px 0 148px;
+    }
+
+    & .section_title{
+        padding-bottom: 56px;
+        margin-bottom: 56px;
+        border-bottom: 1px solid rgba(24,24,24,.1);
+        & h2{
+            margin: 0;
+        }
+    }
+
+    &__item {
+        padding-left: 93px;
+        position: relative;
+
+        &>span {
+            position: absolute;
+            width: 73px;
+            height: 73px;
+            left: 0;
+            top: 0;
+            @include displaFlex(flex, center, center, column);
+
+            & i {
+                font-size: 72px;
+                color: #53ba00;
+                background: #53ba00;
+                background: -moz-gradient(135deg, #a6e72a 33%, #53ba00 66%);
+                background: -webkit-linear-gradient(135deg, #a6e72a 33%, #53ba00 66%);
+                background: -webkit-linear-gradient(315deg, #a6e72a 33%, #53ba00 66%);
+                background: -moz-linear-gradient(315deg, #a6e72a 33%, #53ba00 66%);
+                background: linear-gradient(135deg, #a6e72a 33%, #53ba00 66%);
+                -webkit-background-clip: text !important;
+                -webkit-box-shadow: 0 0 0 0 #FFF inset;
+                box-shadow: 0 0 0 0 #FFF inset;
+                border: none;
+                -webkit-text-fill-color: transparent !important;
+            }
+
+            & i.trackon-eys-vision {
+                font-size: 33px;
+            }
+        }
+
+        & h4 {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        & p {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+    }
+}
+
+// Service Three
+.service_three {
+    padding: 140px 0 140px;
+    @include sm {
+        padding: 100px 0 60px;
+    }
+    & .section_title {
+        border-bottom: 1px solid rgba(24,24,24,.1);
+        padding: 0 0 20px;
+        margin: 0 0 60px;
+        & h2 {
+            & span {
+                color: $primary-color;
+                font-weight: 700;
+            }
+        }
+    }
+    & .service_two__item {
+        padding-left: 130px;
+        @include md {
+            padding-bottom: 80px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        & span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: $whit-color;
+            width: 110px;
+            height: 110px;
+            background: linear-gradient(135deg,#a6e72a 0%,#53ba00 100%);
+            border-radius: 50%;
+            font-size: 40px;
+            color: $whit-color !important;
+            & i {
+                color: $whit-color !important;
+                background: -webkit-linear-gradient(315deg, #ffffff 100%, #ffffff 100%);
+            }
+        }
+    }
+}

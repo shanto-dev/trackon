@@ -1,0 +1,38 @@
+// Review 
+.review_one {
+    padding: 162px 0 175px;
+    background-image: url(../images/bg-img/review-bg.jpeg);
+
+    @include md {
+        padding: 120px 0 135px;
+    }
+
+    &__content {
+        position: relative;
+        text-align: center;
+
+        & h2 {
+            font-size: 60px;
+            font-weight: 300;
+            color: $primary-color;
+            margin-bottom: 30px;
+
+            @include md {
+                font-size: 50px;
+            }
+
+            @include sm {
+                font-size: 36px;
+            }
+        }
+
+        & p {
+            font-size: 20px;
+            line-height: 30px;
+
+            @include sm {
+                font-size: 18px;
+            }
+        }
+    }
+}

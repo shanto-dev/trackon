@@ -1,0 +1,225 @@
+// Hero One 
+.hero_sec {
+    background-image: url(../images/bg-img/hero.jpeg);
+    min-height: 100vh;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+
+        & h1 {
+            font-size: 75px;
+            line-height: 1;
+            font-weight: 300;
+            margin-bottom: 35px;
+            position: relative;
+
+            &::after {
+                content: ' ';
+                display: block;
+                position: absolute;
+                z-index: 5;
+                top: -16px;
+                left: 50%;
+                right: 0;
+                pointer-events: none;
+                width: 90px;
+                height: 2px;
+                background-color: $primary-color;
+                transform: translateX(-50%);
+
+            }
+
+            @include md {
+                font-size: 60px;
+            }
+            @include sm{
+                font-size: 46px;
+            }
+        }
+
+        & p {
+            font-size: 23px;
+            line-height: 34px;
+            font-weight: 400;
+            max-width: 630px;
+            width: 100%;
+            margin-bottom: 90px;
+            @include sm{
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+// Hero Two 
+.hero_about{
+    overflow-x: hidden;
+    @include sm {
+        padding: 0 10px;
+    }
+    & .hero_sec__content {
+        background: linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
+        height: 100%; 
+        @include lg {
+            height: auto;
+            padding: 40px 10px 40px;
+        }
+        & h1 {
+            margin:  0 0 20px;
+            &::after {
+                display: none;
+            }
+            @include lg {
+                font-size: 50px;
+                margin: 0;
+            }
+            @include sm {
+                font-size: 40px;
+            }
+        };
+        & h2 {
+            font-size: 75px;
+            line-height: 75px;
+            color: #fff;
+            margin: 0 0 54px;
+            position: relative;
+            @include lg {
+                margin: 0 0 20px;
+            }
+            @include lg {
+                font-size: 50px;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: -24px auto;
+                width: 90px;
+                height: 2px;
+                background-color: #53ba00;
+                @include lg {
+                    margin: -6px auto;
+                }
+            }
+        };
+        & p{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            max-width: 800px;
+            width: 100%;
+            padding: 0 20px;
+            margin-bottom: 60px;
+            @include lg {
+                margin: 0 0 30px;
+            }
+        };
+        & .hero_btn {
+            gap:20px;
+            @include sm {
+                flex-direction: column;
+                gap: 0;
+            }
+            & .trackon_btn_1 {
+                background: #fff;
+                color:#000;
+                padding: 0px 24px;
+                height: 47px;
+                line-height: 47px;
+                @include tranSition(0.3s);
+                &:hover {
+                    box-shadow: 0 3px 10px rgba(24,24,24,.3);
+                    background: #fff !important;
+                    color: #181818;
+                }
+            };
+            & .trackon_btn_2 {
+                padding: 0px 24px;
+                height: 47px;
+                line-height: 47px;
+                @include tranSition(0.3s);
+                &:hover {
+                    background: #A6E72A !important;
+                }
+            }
+        }
+    };
+    & .heroab_image {
+       & img {
+            max-width: 100%;
+            width: 100%;
+        }
+    };
+}
+
+// Hero Three
+.hero_careers {
+    overflow-x: hidden;
+    & .herocr_image {
+        & img {
+            max-width: 100%;
+        }
+    }
+    & .hero_sec__content {
+        background: linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+        padding: 60px 40px;
+
+        & h1 {
+            margin: 0;
+            @include lg {
+                font-size: 50px !important;
+                width: 100%;
+            }
+            @include sm {
+                margin: 0 0 10px;
+                font-size: 40px;
+            }
+            &::after {
+                position: relative;
+                display: none;
+            }
+        }
+        & h2 {
+            color: $whit-color;
+            font-size: 75px;
+            line-height: 75px;
+            position: relative;
+            margin: 0 0 34px;
+            padding: 0 0 24px;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 90px;
+                height: 2px;
+                background: $primary-color;
+            }
+            @include lg {
+                font-size: 60px;
+            }
+            @include sm {
+                line-height: 40px;
+                font-size: 40px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 580px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+    }
+}

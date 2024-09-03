@@ -1,0 +1,140 @@
+// Client section 
+.client_one {
+    position: relative;
+    padding: 106px 0;
+
+    & h2 {
+        font-size: 60px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        text-align: center;
+
+        @include md {
+            font-size: 50px;
+        }
+
+        @include sm {
+            font-size: 36px;
+        }
+    }
+
+    & p {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        text-align: center;
+
+        @include sm {
+            font-size: 18px;
+        }
+    }
+
+    &__clientGrid {
+        position: relative;
+        @include displaFlex(flex, space-between, start, row);
+
+        @include sm {
+            justify-content: center;
+        }
+
+        &__item {
+            @include displaFlex(inline-flex, center, start, column);
+
+            & img {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+
+                @include lg {
+                    max-width: 90%;
+                }
+
+                @include md {
+                    max-width: 95%;
+                }
+
+                @include sm {
+                    max-width: 85%;
+                }
+            }
+
+            &:hover {
+                & img {
+                    -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+                    cursor: pointer;
+                }
+            }
+            @include sm {
+                align-items: center;
+            }
+        }
+
+        &__item:nth-child(1) {
+            & img {
+                max-width: 373px;
+                height: auto;
+                ;
+            }
+        }
+
+        @include md {
+            flex-wrap: wrap;
+            row-gap: 40px;
+            align-items: center;
+        }
+    }
+
+}
+
+
+// Client Sec 02
+.client_sec02 {
+    background: linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
+    padding:140px 0 120px;
+    @include sm {
+        padding: 100px 0 60px;
+    }
+    & .owl-stage {
+        display: flex;
+        align-items: center;
+    }
+    & .section_title {
+        margin: 0 0 80px;
+        & h2 {
+            margin-bottom: 0;
+            @include sm {
+                font-size: 40px;
+            }
+        }
+        & h3 {
+            font-size: 60px;
+            font-weight: 600;
+            color: $whit-color;
+            font-weight: 700;
+            position: relative;
+            margin: 0 0 40px;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: -20px auto;
+                width: 90px;
+                height: 2px;
+                background-color: $whit-color;
+            }
+            @include sm {
+                font-size: 40px;
+            }
+        }
+    }
+    & .client-slider02.owl-carousel {
+        & .owl-item {
+            & img {
+                max-width: 100%;
+                width: auto;
+            }
+        }
+    }
+}

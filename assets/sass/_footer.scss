@@ -1,0 +1,65 @@
+// Footer 
+.footer_one {
+    padding: 30px 0;
+    background-color: $whit-color;
+
+    & .footer_nav_widgets {
+        padding-top: 12px;
+    }
+    & .mt-5{
+        @include sm{
+            margin-top: 30px !important;
+        }
+    }
+
+    aside h4 {
+        font-size: 20px;
+        list-style: 1;
+        font-weight: 300;
+        margin-bottom: 12px;
+    }
+
+    & .footer_nav {
+        list-style: disc;
+        margin-left: 18px;
+
+        & li:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        & a {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $primary-color;
+
+            &:hover {
+                color: $headding-color;
+            }
+        }
+    }
+}
+
+// Footer Two
+.footer_two {
+    background: #F3F3F3;
+    padding: 60px 0 40px;
+    & a {
+        display: inline-block;
+        & img {
+            max-width: 288px;
+            width: 100%;
+        }
+    }
+}
+.copyright {
+    background: rgb(243, 243, 243);
+    padding: 26px 0 26px;
+    border-top: 1px solid rgb(222, 222, 222);
+    & p {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgb(60, 84, 104);
+        font-family: "Arvo", serif;
+    }
+}
