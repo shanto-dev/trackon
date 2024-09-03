@@ -45,9 +45,6 @@
             & li.prev {
                 & a{
                     @include displaFlex(inline-flex, start, center, row-reverse);
-                    & i{
-
-                    }
                 }
             }
         }
