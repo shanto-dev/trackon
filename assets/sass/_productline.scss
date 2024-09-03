@@ -1,0 +1,55 @@
+// Max Css load from blog.scss 
+
+// body class 
+.productline-page {
+    position: relative;
+
+    & .productline_nav {
+        padding: 112px 0 64px;
+
+        & ul {
+            & li {
+                & a {
+                    font-size: 16px;
+                    line-height: 40px;
+                    font-weight: 700;
+                    font-family: $secondary-font;
+                    color: $headding-color;
+                    @include displaFlex(inline-flex, end, center, row);
+                    column-gap: 10px;
+                    @include tranSition(0.3s);
+
+                    & i {
+                        font-size: 16px;
+                        color: $whit-color;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: $primary-color;
+                        @include tranSition(0.3s);
+                        @include displaFlex(flex, center, center, column);
+                    }
+
+                    &:hover i {
+                        background: $secondary-color;
+                        color: $headding-color;
+                        -webkit-box-shadow: 0 3px 10px rgba(24, 24, 24, .3);
+                        box-shadow: 0 3px 10px rgba(24, 24, 24, .3);
+                        -webkit-transform: scale(1.1);
+                        -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            & li.prev {
+                & a{
+                    @include displaFlex(inline-flex, start, center, row-reverse);
+                    & i{
+
+                    }
+                }
+            }
+        }
+    }
+}

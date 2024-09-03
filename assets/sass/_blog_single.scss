@@ -387,7 +387,7 @@
         & .single_navigation {
             position: relative;
 
-            ul {
+            & ul {
                 @include displaFlex(flex, space-between, center, row);
 
                 @include sm {
@@ -479,6 +479,18 @@
                 }
 
             }
+
+            & ul.only_next {
+                & li:first-child {
+                    min-height: unset;
+                }
+            }
+
+            & ul.only_prev {
+                & li:nth-child(2) {
+                    min-height: unset;
+                }
+            }
         }
     }
 }
@@ -487,18 +499,23 @@
 .implement {
     margin: 0 0 40px;
     padding-right: 40px;
+
     @include md {
         padding-right: 0;
     }
+
     & .post_cat {
         margin: 0;
     }
+
     & p:first-child {
         margin: 0;
     }
+
     & .post_title {
         margin: 0 0 80px !important;
     }
+
     & p {
         font-size: 14px;
         line-height: 24px;
@@ -506,18 +523,21 @@
         color: #646060;
         margin: 0 0 20px;
     }
+
     & h4 {
         font-size: 15px;
     }
+
     & blockquote {
         padding: 20px;
-        border: 1px solid rgba(24,24,24,.1);
+        border: 1px solid rgba(24, 24, 24, .1);
         font-size: 15px;
         font-family: monospace;
         line-height: 31px;
         font-weight: 700;
         margin: 0 0 40px;
     }
+
     i {
         font-size: 40px;
         color: #E7E7E7;
@@ -526,24 +546,29 @@
 
 .implement-info {
     margin-top: 200px;
+
     @include md {
         margin: 0 0 60px;
     }
 }
+
 .implement-info {
     & ul {
         margin-bottom: 30px;
+
         & li {
             font-size: 14px;
             line-height: 25px;
             color: #646060;
             margin: 0 0 8px;
+
             & span {
                 color: $headding-color;
                 font-weight: 700;
                 display: inline-block;
                 width: 100px;
             }
+
             & b {
                 color: $headding-color;
                 font-weight: 700;
@@ -551,6 +576,7 @@
         }
     }
 }
+
 .social {
     & a {
         display: inline-flex;
@@ -563,9 +589,11 @@
         color: $whit-color;
         background: #3b5998;
     }
+
     & a:nth-child(02) {
         background: #1da1f2;
     }
+
     & a:nth-child(03) {
         background: #007bb5;
     }
@@ -573,30 +601,37 @@
 
 .trackon_oilsTitle {
     margin: 0 0 160px;
+
     @include md {
         margin: 0 0 100px;
     }
+
     @include sm {
         margin: 0 0 80px;
     }
+
     & .post_title {
         margin-bottom: 40px;
     }
+
     img {
         max-width: 100%;
     }
 }
+
 .trading-olis {
     text-align: center;
     max-width: 640px;
     width: 100%;
     margin: 0 auto 50px;
+
     & h2 {
         & b {
             color: $primary-color;
             font-weight: 700;
         }
     }
+
     & p {
         color: #A2A2A2;
         font-size: 20px;
