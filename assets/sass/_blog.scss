@@ -179,6 +179,7 @@
                 padding-bottom: 22px;
                 position: relative;
                 margin-bottom: 23px;
+                letter-spacing: -.8px;
 
                 @include sm {
                     font-size: 34px;
@@ -208,8 +209,10 @@
 
             & p {
                 font-size: 14px;
-                line-height: 25px;
-                margin-bottom: 36px;
+                line-height: 1.8;
+                margin-bottom: 27px;
+                opacity: .7;
+                letter-spacing: -.09px;
             }
 
             & .post_socal {
@@ -340,6 +343,18 @@
             -webkit-column-gap: 15px;
             -moz-column-gap: 15px;
             column-gap: 15px;
+            letter-spacing: -.1px;
+            padding: 0 28px;
+
+            & i {
+                font-size: 13px;
+            }
+        }
+    }
+
+    & .lg-pe-4 {
+        @include mn_xxl {
+            padding-right: 36px;
         }
     }
 }
@@ -363,10 +378,11 @@
     & .widget_title {
         font-size: 24px;
         line-height: 1;
-        padding-bottom: 15px;
-        margin-bottom: 25px;
+        padding-bottom: 22px;
+        margin-bottom: 24px;
         position: relative;
         font-weight: 400;
+        letter-spacing: .16px;
 
         &:after {
             content: "";
@@ -389,7 +405,7 @@
                 height: 40px;
                 line-height: 40px;
                 font-size: 13px;
-                padding: 0 13px;
+                padding: 0 10px;
                 color: $heading-color;
                 border-radius: 30px;
                 border: 1px solid rgba(24, 24, 24, .1);
@@ -459,6 +475,7 @@
                 line-height: 22px;
                 color: $heading-color;
                 margin: 0;
+                letter-spacing: -.4px;
 
                 & a {
                     color: inherit;

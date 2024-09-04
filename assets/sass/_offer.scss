@@ -1,9 +1,9 @@
 // Offer Sec 
 .offer-sec {
-    padding: 120px 0 120px;
+    padding: 150px 0 134px;
 
     @include sm {
-        padding: 80px 0 80px;
+        padding: 90px 0;
     }
 
     & .section_title {
@@ -24,7 +24,8 @@
             color: $primary-color;
             font-size: 60px;
             line-height: 60px;
-            margin: 0 0 26px;
+            margin: 0 0 30px;
+            letter-spacing: -1.2px;
 
             @include sm {
                 font-size: 40px;
@@ -39,17 +40,15 @@
 
         & p {
             border-bottom: 1px solid rgba(24, 24, 24, .1);
-            padding: 0 0 60px;
-            margin: 0 0 80px;
+            padding: 0px 0 56px;
+            margin: 0 0 88px;
         }
     }
-
-    ;
 
     & .offer-item {
         position: relative;
         text-align: center;
-        margin: 0 0 60px;
+        margin: 0 0 32px;
 
         & span {
             display: -webkit-inline-box;
@@ -66,7 +65,7 @@
             background: -webkit-linear-gradient(315deg, #a6e72a 0%, #53ba00 100%);
             background: linear-gradient(135deg, #a6e72a 0%, #53ba00 100%);
             color: #000;
-            font-size: 60px;
+            font-size: 64px;
             border-radius: 50%;
             margin: 0 0 20px;
         }

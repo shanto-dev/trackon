@@ -30,6 +30,7 @@
             }
 
             & img {
+                max-width: 100%;
                 -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
                 -webkit-transform: scale3d(1, 1, 1);

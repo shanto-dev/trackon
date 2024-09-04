@@ -86,6 +86,14 @@ a {
     --bs-gutter-y: 20px;
 }
 
+.gx-40 {
+    --bs-gutter-x: 40px;
+}
+
+.gy-40 {
+    --bs-gutter-y: 40px;
+}
+
 // Mixin
 @mixin displaFlex($flex, $justify, $alignItems, $direction) {
     display: $flex;

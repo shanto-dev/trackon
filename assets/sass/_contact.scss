@@ -2,7 +2,7 @@
 .contact-page {
     background: -webkit-linear-gradient(315deg, #a6e72a 20%, #53ba00 80%);
     background: linear-gradient(135deg, #a6e72a 20%, #53ba00 80%);
-    padding: 140px 0 180px;
+    padding: 150px 0 180px;
 
     @include lg {
         padding: 120px 0 120px;
@@ -22,6 +22,7 @@
             line-height: 60px;
             font-weight: 300;
             margin: 0 0 30px;
+            letter-spacing: -1.2px;
 
             & b {
                 font-weight: 700;
@@ -47,12 +48,16 @@
                 -webkit-transition: all 350ms ease;
                 transition: all 350ms ease;
                 background: $white-color;
-                margin: 0 0 14px;
+                margin: 0 0 16px;
                 resize: none;
 
                 &:focus {
                     box-shadow: 0 0 0 2px rgba(24, 24, 24, .1) inset;
                 }
+            }
+            & label> .field_required{
+                color: $primary-color;
+                margin-left: 8px;
             }
 
             & textarea {
