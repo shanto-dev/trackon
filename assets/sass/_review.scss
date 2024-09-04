@@ -1,6 +1,6 @@
 // Review 
 .review_one {
-    padding: 162px 0 175px;
+    padding: 158px 0 224px;
     background-image: url(../images/bg-img/review-bg.jpeg);
 
     @include md {
@@ -16,6 +16,7 @@
             font-weight: 300;
             color: $primary-color;
             margin-bottom: 30px;
+            letter-spacing: -1.2px;
 
             @include md {
                 font-size: 50px;

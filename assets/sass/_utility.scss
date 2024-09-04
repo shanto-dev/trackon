@@ -9,9 +9,9 @@ sans-serif;
 $primary-color: #53ba00;
 $secondary-color: #a6e72a;
 $secondary-color2: #48a100;
-$headding-color: #181818;
+$heading-color: #181818;
 $body-color: #181818;
-$whit-color: #FFFFFF;
+$white-color: #FFFFFF;
 $off-white-color: #efefef;
 $body-font-size: 16px;
 $body-line-height: 24px;
@@ -39,7 +39,7 @@ h4,
 h5,
 h6 {
     font-weight: 700;
-    color: $headding-color;
+    color: $heading-color;
     line-height: 1.1;
     font-family: $secondary-font;
 
@@ -89,8 +89,15 @@ a {
 // Mixin
 @mixin displaFlex($flex, $justify, $alignItems, $direction) {
     display: $flex;
+    -webkit-box-pack: $justify;
+    -ms-flex-pack: $justify;
     justify-content: $justify;
+    -webkit-box-align: $alignItems;
+    -ms-flex-align: $alignItems;
     align-items: $alignItems;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: $direction;
     flex-direction: $direction;
 }
 

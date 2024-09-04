@@ -1,10 +1,12 @@
 .privacy_policy_sec {
     position: relative;
     padding: 194px 0 130px;
-    @include md{
+
+    @include md {
         padding: 160px 0 110px;
     }
-    @include sm{
+
+    @include sm {
         padding: 160px 0 90px;
     }
 
@@ -24,7 +26,7 @@
             line-height: 1;
             font-weight: 300;
             margin-bottom: 35px;
-            color: $headding-color;
+            color: $heading-color;
             position: relative;
 
             @include md {
@@ -66,7 +68,7 @@
                     font-size: inherit;
 
                     &:hover {
-                        color: $headding-color;
+                        color: $heading-color;
                     }
                 }
             }
@@ -99,11 +101,12 @@
                     color: $primary-color;
 
                     &:hover {
-                        color: $headding-color;
+                        color: $heading-color;
                     }
                 }
             }
-            & h3{
+
+            & h3 {
                 font-size: 23px;
                 line-height: 23px;
                 font-weight: 700;
@@ -155,6 +158,8 @@
             & ul {
                 position: relative;
                 @include displaFlex(flex, flex-end, center, row);
+                -webkit-column-gap: 8px;
+                -moz-column-gap: 8px;
                 column-gap: 8px;
 
                 li a {
@@ -163,12 +168,11 @@
                     border-radius: 50%;
                     font-size: 16px;
                     @include displaFlex(flex, center, center, column);
-                    color: $whit-color;
+                    color: $white-color;
                     background: #3b5998;
                     position: relative;
                     overflow: hidden;
                     -webkit-transition: color 200ms ease;
-                    -moz-transition: color 200ms ease;
                     transition: color 200ms ease;
 
                     & i {
@@ -183,7 +187,7 @@
                         top: 0;
                         left: 0;
                         z-index: -1;
-                        background: $whit-color;
+                        background: $white-color;
                         -webkit-transform: scale(0);
                         transform: scale(0);
                         -webkit-transition: all 0.3s ease;
@@ -213,7 +217,7 @@
                     background: #1da1f2;
 
                     &:before {
-                        background: $whit-color;
+                        background: $white-color;
                     }
 
                     &:hover:before {
@@ -238,7 +242,7 @@
                     background: #007bb5;
 
                     &:before {
-                        background: $whit-color;
+                        background: $white-color;
                     }
 
                     &:hover:before {
@@ -268,6 +272,7 @@
                 @include displaFlex(flex, space-between, center, row);
 
                 @include sm {
+                    -ms-flex-wrap: wrap;
                     flex-wrap: wrap;
                     row-gap: 40px;
                 }
@@ -300,7 +305,7 @@
                         line-height: 29px;
                         font-weight: 700;
                         margin: 0;
-                        color: $headding-color;
+                        color: $heading-color;
 
                         & a {
                             color: inherit;
@@ -317,13 +322,14 @@
                 & li:nth-child(2) {
                     position: relative;
                     text-align: right;
+                    -webkit-box-align: end;
+                    -ms-flex-align: end;
+                    -ms-grid-row-align: end;
                     align-items: end;
                     padding-left: 0;
                 }
 
             }
         }
-
-
     }
 }

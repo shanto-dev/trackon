@@ -1,13 +1,15 @@
 // Client section 
 .client_one {
     position: relative;
-    padding: 106px 0;
+    padding: 135px 0 145px;
 
     & h2 {
         font-size: 60px;
         font-weight: 300;
         margin-bottom: 30px;
         text-align: center;
+        letter-spacing: -1.2px;
+        line-height: 1;
 
         @include md {
             font-size: 50px;
@@ -34,6 +36,8 @@
         @include displaFlex(flex, space-between, start, row);
 
         @include sm {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
         }
 
@@ -64,7 +68,11 @@
                     cursor: pointer;
                 }
             }
+
             @include sm {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -ms-grid-row-align: center;
                 align-items: center;
             }
         }
@@ -78,8 +86,12 @@
         }
 
         @include md {
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             row-gap: 40px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -ms-grid-row-align: center;
             align-items: center;
         }
     }
@@ -89,30 +101,42 @@
 
 // Client Sec 02
 .client_sec02 {
-    background: linear-gradient(135deg,#a6e72a 20%,#53ba00 80%);
-    padding:140px 0 120px;
+    background: -webkit-linear-gradient(315deg, #a6e72a 20%, #53ba00 80%);
+    background: linear-gradient(135deg, #a6e72a 20%, #53ba00 80%);
+    padding: 140px 0 120px;
+
     @include sm {
         padding: 100px 0 60px;
     }
+
     & .owl-stage {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
+
     & .section_title {
         margin: 0 0 80px;
+
         & h2 {
             margin-bottom: 0;
+
             @include sm {
                 font-size: 40px;
             }
         }
+
         & h3 {
             font-size: 60px;
             font-weight: 600;
-            color: $whit-color;
+            color: $white-color;
             font-weight: 700;
             position: relative;
             margin: 0 0 40px;
+
             &::after {
                 content: "";
                 position: absolute;
@@ -122,13 +146,15 @@
                 margin: -20px auto;
                 width: 90px;
                 height: 2px;
-                background-color: $whit-color;
+                background-color: $white-color;
             }
+
             @include sm {
                 font-size: 40px;
             }
         }
     }
+
     & .client-slider02.owl-carousel {
         & .owl-item {
             & img {

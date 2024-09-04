@@ -26,7 +26,8 @@
             font-size: 18px;
             line-height: 18px;
             text-transform: uppercase;
-            color: $headding-color;
+            color: $heading-color;
+            -webkit-transition: all 350ms ease;
             transition: all 350ms ease;
             display: inline-block;
             margin: 0 0 10px;

@@ -14,14 +14,16 @@
                     line-height: 40px;
                     font-weight: 700;
                     font-family: $secondary-font;
-                    color: $headding-color;
+                    color: $heading-color;
                     @include displaFlex(inline-flex, end, center, row);
+                    -webkit-column-gap: 10px;
+                    -moz-column-gap: 10px;
                     column-gap: 10px;
                     @include tranSition(0.3s);
 
                     & i {
                         font-size: 16px;
-                        color: $whit-color;
+                        color: $white-color;
                         width: 40px;
                         height: 40px;
                         border-radius: 50%;
@@ -32,18 +34,16 @@
 
                     &:hover i {
                         background: $secondary-color;
-                        color: $headding-color;
-                        -webkit-box-shadow: 0 3px 10px rgba(24, 24, 24, .3);
+                        color: $heading-color;
                         box-shadow: 0 3px 10px rgba(24, 24, 24, .3);
                         -webkit-transform: scale(1.1);
-                        -moz-transform: scale(1.1);
-                        -ms-transform: scale(1.1);
                         transform: scale(1.1);
                     }
                 }
             }
+
             & li.prev {
-                & a{
+                & a {
                     @include displaFlex(inline-flex, start, center, row-reverse);
                 }
             }

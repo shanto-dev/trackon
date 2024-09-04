@@ -21,29 +21,39 @@
         color: $primary-color;
         border: unset;
         padding: 40px;
-        & button{
+
+        & button {
             --bs-btn-close-color: #53ba00;
             color: $primary-color;
             box-shadow: unset;
             outline: unset;
             border: unset;
             background: unset;
-            i{          
+
+            i {
                 font-size: 55px;
                 @include tranSition(0.2s);
             }
-            &:hover i{
+
+            &:hover i {
+                -webkit-transform: rotate(180deg);
                 transform: rotate(180deg);
             }
         }
     }
 
     & .modal-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
-        & form{
+        & form {
             position: relative;
             max-width: 1008px;
             width: 100%;
@@ -58,11 +68,9 @@
             border: none;
             text-align: left;
             -webkit-transition: 500ms ease all;
-            -moz-transition: 500ms ease all;
             transition: 500ms ease all;
-            color: $headding-color;
+            color: $heading-color;
             border-radius: 100px;
-            -webkit-box-shadow: 0 0 0 2px rgba(24, 24, 24, .1) inset;
             box-shadow: 0 0 0 2px rgba(24, 24, 24, .1) inset;
             max-width: 1008px;
             width: 100%;
@@ -80,17 +88,18 @@
             background: transparent !important;
             border: 0;
             cursor: pointer;
-            -webkit-box-shadow: none !important;
             box-shadow: none !important;
             box-shadow: unset;
             outline: unset;
             border: unset;
-            color: rgba(24,24,24,.1);
-            & i{
+            color: rgba(24, 24, 24, .1);
+
+            & i {
                 font-size: 40px;
             }
-            &:hover i{
-                color:  $primary-color;
+
+            &:hover i {
+                color: $primary-color;
             }
         }
     }
