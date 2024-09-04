@@ -36,6 +36,10 @@
             letter-spacing: -1.2px;
             padding-right: 30px;
 
+            @include lg {
+                font-size: 58px;
+            }
+
             @include md {
                 font-size: 50px;
                 padding-right: 0px;
@@ -236,6 +240,10 @@
             margin: 0 auto;
         }
 
+        @include sm {
+            padding-left: 110px;
+        }
+
         & span {
             display: -webkit-inline-box;
             display: -ms-inline-flexbox;
@@ -255,9 +263,25 @@
             font-size: 40px;
             color: $white-color !important;
 
+            @include sm {
+                width: 90px;
+                height: 90px;
+                font-size: 34px;
+            }
+
             & i {
                 color: $white-color !important;
                 background: -webkit-linear-gradient(315deg, #ffffff 100%, #ffffff 100%);
+
+                @include sm {
+                    font-size: 60px !important;
+                }
+            }
+
+            & i.trackon-eys-vision {
+                @include sm {
+                    font-size: 32px !important;
+                }
             }
         }
     }

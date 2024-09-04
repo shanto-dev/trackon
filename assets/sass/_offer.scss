@@ -82,4 +82,10 @@
             line-height: 21px;
         }
     }
+
+    @include md {
+        & .gx-40 {
+            --bs-gutter-x: 24px;
+        }
+    }
 }

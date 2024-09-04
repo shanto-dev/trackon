@@ -20,6 +20,14 @@
         flex-direction: column;
         height: 100vh;
 
+        @include md {
+            min-height: 590px;
+        }
+
+        @include sm {
+            min-height: 590px;
+        }
+
         & h1 {
             font-size: 75px;
             line-height: 1;
@@ -184,7 +192,7 @@
                 -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                 flex-direction: column;
-                gap: 0;
+                gap: 16px;
             }
 
             & .trackon_btn_1 {
@@ -218,15 +226,28 @@
 
     &__cnt_inner {
         padding: 56px 0;
+
+        @include lg {
+            padding: 40px 20px;
+        }
     }
 
     & .heroab_image {
         & img {
             max-width: 100%;
             width: 100%;
+            object-fit: cover;
 
             @include mn_xxl {
                 min-height: 815px;
+            }
+
+            @include lg {
+                min-height: 529px;
+            }
+
+            @include md {
+                min-width: 420px;
             }
         }
     }
@@ -239,9 +260,18 @@
     & .herocr_image {
         & img {
             max-width: 100%;
+            object-fit: cover;
 
             @include mn_xxl {
                 min-height: 802px;
+            }
+
+            @include lg {
+                min-height: 707px;
+            }
+
+            @include md {
+                min-height: 420px;
             }
         }
     }
@@ -258,6 +288,18 @@
         justify-content: center;
         height: 100%;
         padding: 60px 45px;
+
+        @include lg {
+            padding: 60px 20px 40px;
+        }
+
+        @include md {
+            padding: 60px 40px;
+        }
+
+        @include sm {
+            padding: 60px 20px;
+        }
 
         & h1 {
             margin: 0;

@@ -2,6 +2,10 @@
     position: relative;
     padding: 194px 0 130px;
 
+    @include sm {
+        padding: 140px 0 100px;
+    }
+
     & .blog_single_content {
         position: relative;
 
@@ -497,6 +501,19 @@
                 }
             }
         }
+
+        @include sm {
+            & .sinNavLast {
+                & ul {
+                    flex-direction: column-reverse;
+                    row-gap: 0;
+
+                    & li:first-child {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -635,6 +652,11 @@
     max-width: 640px;
     width: 100%;
     margin: 0 auto 50px;
+
+    @include md {
+        width: 100% !important;
+        padding: 0 14px;
+    }
 
     & h2 {
         & b {

@@ -187,6 +187,10 @@
     position: relative;
     padding: 194px 0 130px;
 
+    @include md {
+        padding: 180px 0 60px;
+    }
+
     & .pdt_single_content {
         position: relative;
 

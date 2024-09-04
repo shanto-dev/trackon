@@ -55,7 +55,8 @@
                     box-shadow: 0 0 0 2px rgba(24, 24, 24, .1) inset;
                 }
             }
-            & label> .field_required{
+
+            & label>.field_required {
                 color: $primary-color;
                 margin-left: 8px;
             }
@@ -109,6 +110,11 @@
 .contact-area {
     position: relative;
     padding: 120px 0 120px;
+
+    & label>.field_required {
+        color: $primary-color;
+        margin-left: 8px;
+    }
 
     @include lg {
         padding: 0px 0 80px;
@@ -208,7 +214,7 @@
         padding-top: 40px;
 
         @include md {
-            padding-top: 80px;
+            padding-top: 60px !important;
         }
 
         & .info-col {

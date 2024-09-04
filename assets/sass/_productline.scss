@@ -7,6 +7,10 @@
     & .productline_nav {
         padding: 112px 0 64px;
 
+        @include sm {
+            padding: 40px 0 20px;
+        }
+
         & ul {
             & li {
                 & a {
